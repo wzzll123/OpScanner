@@ -22,7 +22,7 @@ make
 ```
 Afterwards, running scan.py will display the scanning results in the command line.
 #### Precision Testing
-We refer to the tool Predoo (https://github.com/predoodl/predoo), reimplement and improve it. We have implemented both the random strategy and the guided strategy proposed by Predoo. You can run the tool by directly calling the Python script in the /testing directory. For example, to test the PyTorch ELU operator, you can run the following command:
+We refer to the tool Predoo (https://github.com/predoodl/predoo), reimplement and improve it. We have implemented both the random strategy and the guided strategy proposed by Predoo. We improved Predoo to enable it to support precision testing of PyTorch operators and to generate multiple tensors simultaneously. You can run the tool by directly calling the Python script in the /testing directory. For example, to test the PyTorch ELU operator, you can run the following command:
 ```
 python test_torch_forward.py elu
 ```
