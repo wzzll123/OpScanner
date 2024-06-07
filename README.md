@@ -9,7 +9,7 @@ The analysis/ directory includes LLVM analysis passes for extracting precision c
 The testing/ directory houses precision testing tools for activation operators. 
 ## Usage
 #### Build and Compile
-Firstly, to obtain the compilation database, you need to compile the DL frameworks from source code. For more details, refer to thehttps://github.com/pytorch/pytorch and https://www.tensorflow.org/install/source. Specifically, when compiling TensorFlow using Bazel, you should add the option --subcommands to print the full command line for each command. After compiling, the compilation database can be found in the build directory for PyTorch. For TensorFlow, you need to capture the compilation database by redirection.
+Firstly, to obtain the compilation database, you need to compile the DL frameworks from source code. For more details, refer to the https://github.com/pytorch/pytorch and https://www.tensorflow.org/install/source. Specifically, when compiling TensorFlow using Bazel, you should add the option --subcommands to print the full command line for each command. After compiling, the compilation database can be found in the build directory for PyTorch. For TensorFlow, you need to capture the compilation database by redirection.
 
 Once you have obtained the compilation database, replace the database directory in the scripts located in the build/ directory. Then, run the scripts to generate the LLVM IR for the CUDA implementation of the operators.
 
