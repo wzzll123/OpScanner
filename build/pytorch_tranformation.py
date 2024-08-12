@@ -8,11 +8,9 @@ failed = []
 if __name__ == '__main__':
     # compile_json = "pytorch-v1.11.0/build/compile_commands.json"
     compile_json = "pytorch-v2.1.0/build/compile_commands.json"
+    cxx = "/home/zzwen/opt/llvm/llvm17/bin/clang++ --cuda-device-only --cuda-gpu-arch=sm_86 "
     # generate_root_path = '1.11.0-bc'
     # flags = "--cuda-host-only -emit-llvm -g -O0"
-    # flags = "--cuda-gpu-arch=sm_70 -emit-llvm -g -O0"
-    cxx = "/home/wzz/opt/llvm/llvm16/bin/clang++ --cuda-device-only "
-    cc = "/home/wzz/opt/llvm/llvm16/bin/clang "
     black_options = ['-Xcompiler','-Xcudafe','-Xfatbin','-forward-unknown-to-host-compiler','-O1', '-O2', '-O3', '--diag_suppress=', '--expt-relaxed-constexpr', '--expt-extended-lambda', '-compress-all']
     with open(compile_json, 'r') as f:
         cmds = json.load(f)
@@ -39,6 +37,8 @@ if __name__ == '__main__':
                 for black_option in black_options:
                     if op.startswith(black_option):
                         compile_cmd[j] = ''
+                if  ('transformers' in c['command'] or 'nested' in c['command'] or 'sparse' in c['command']) and op.startswith('-D__CUDA_NO_HALF_OPERATORS__'):
+                    compile_cmd[j]=''
                 if op.startswith('-gencode'):
                     compile_cmd[j] = ''
                     compile_cmd[j+1] = ''

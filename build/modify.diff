@@ -1,0 +1,88 @@
+Only in pytorch-v2.1.0/aten/src/ATen: Config.h
+Only in pytorch-v2.1.0/aten/src/ATen/cuda: CUDAConfig.h
+diff -r '--exclude=build' pytorch-v2.1.0/aten/src/ATen/native/transformers/cuda/flash_attn/gemm.h pytorch_without_build/pytorch-v2.1.0/aten/src/ATen/native/transformers/cuda/flash_attn/gemm.h
+315,317c315,317
+<     // static_assert(FragmentA::kStorageElements * kIters == a[0].NUM_REGS);
+<     // static_assert(FragmentB::kStorageElements * kIters * 16 / InstructionShape::kN == b[0].NUM_REGS);
+<     // static_assert(FragmentC::kStorageElements == M * N * acc[0][0].NUM_REGS);
+---
+>     static_assert(FragmentA::kStorageElements * kIters == a[0].NUM_REGS);
+>     static_assert(FragmentB::kStorageElements * kIters * 16 / InstructionShape::kN == b[0].NUM_REGS);
+>     static_assert(FragmentC::kStorageElements == M * N * acc[0][0].NUM_REGS);
+diff -r '--exclude=build' pytorch-v2.1.0/aten/src/ATen/native/transformers/cuda/mem_eff_attention/kernel_backward.h pytorch_without_build/pytorch-v2.1.0/aten/src/ATen/native/transformers/cuda/mem_eff_attention/kernel_backward.h
+2328c2328
+<     MatmulQK::Mma::template prologue<kReloadK, true>(
+---
+>     MatmulQK::Mma::prologue<kReloadK, true>(
+2538c2538
+< } // namespace PyTorchMemEffAttention
+---
+> } // namespace PyTorchMemEffAttention
+\ No newline at end of file
+diff -r '--exclude=build' pytorch-v2.1.0/aten/src/ATen/native/transformers/cuda/mem_eff_attention/kernel_forward.h pytorch_without_build/pytorch-v2.1.0/aten/src/ATen/native/transformers/cuda/mem_eff_attention/kernel_forward.h
+703c703
+<             typename MM1::IteratorB::Params{typename MM1::LayoutB(p.v_strideM)},
+---
+>             typename MM1::IteratorB::Params{MM1::LayoutB(p.v_strideM)},
+963c963
+<             typename MM1::IteratorB::Params{typename MM1::LayoutB(p.v_strideM)},
+---
+>             typename MM1::IteratorB::Params{MM1::LayoutB(p.v_strideM)},
+1287c1287
+< } // namespace PyTorchMemEffAttention
+---
+> } // namespace PyTorchMemEffAttention
+\ No newline at end of file
+Only in pytorch-v2.1.0: compile.log
+Only in pytorch-v2.1.0: nvfuser
+Only in pytorch-v2.1.0/test/_nvfuser: .gitignore
+diff -r '--exclude=build' pytorch-v2.1.0/third_party/cutlass/include/cute/config.hpp pytorch_without_build/pytorch-v2.1.0/third_party/cutlass/include/cute/config.hpp
+43,46c43
+< #if defined(__clang__)
+< #  define CUTE_UNROLL    _Pragma("unroll")
+< #  define CUTE_NO_UNROLL _Pragma("unroll 1")
+< #elif !defined(__CUDACC_RTC__) && (defined(__CUDA_ARCH__) || defined(_NVHPC_CUDA))
+---
+> #if !defined(__CUDACC_RTC__) && (defined(__CUDA_ARCH__) || defined(_NVHPC_CUDA))
+diff -r '--exclude=build' pytorch-v2.1.0/third_party/cutlass/include/cutlass/gemm/kernel/sm70_gemm.hpp pytorch_without_build/pytorch-v2.1.0/third_party/cutlass/include/cutlass/gemm/kernel/sm70_gemm.hpp
+188,192c188
+<     //auto [m_coord, n_coord, l_coord] = blockIdx;
+<     auto m_coord = blockIdx.x;
+<     auto n_coord = blockIdx.y;
+<     auto l_coord = blockIdx.z;
+< 
+---
+>     auto [m_coord, n_coord, l_coord] = blockIdx;
+Only in pytorch-v2.1.0/third_party/python-peachpy/peachpy/c: __pycache__
+Only in pytorch-v2.1.0/third_party/python-peachpy/peachpy/formats/elf: __pycache__
+Only in pytorch-v2.1.0/third_party/python-peachpy/peachpy/formats/mscoff: __pycache__
+Only in pytorch-v2.1.0/third_party/python-peachpy/peachpy/formats: __pycache__
+Only in pytorch-v2.1.0/third_party/python-peachpy/peachpy: __pycache__
+Only in pytorch-v2.1.0/third_party/python-peachpy/peachpy/x86_64: __pycache__
+Only in pytorch-v2.1.0/third_party/python-six: __pycache__
+Only in pytorch-v2.1.0/tools/autograd: __pycache__
+Only in pytorch-v2.1.0/tools: __pycache__
+Only in pytorch-v2.1.0/tools/pyi: __pycache__
+Only in pytorch-v2.1.0/tools/shared: _utils_internal.py
+Only in pytorch-v2.1.0/torch/_C: __init__.pyi
+Only in pytorch-v2.1.0/torch/_C: _nn.pyi
+Only in pytorch-v2.1.0/torch/_C: _VariableFunctions.pyi
+Only in pytorch-v2.1.0/torch/csrc/api/include/torch: version.h
+Only in pytorch-v2.1.0/torch/csrc/autograd: generated
+Only in pytorch-v2.1.0/torch/csrc/lazy/generated: LazyIr.h
+Only in pytorch-v2.1.0/torch/csrc/lazy/generated: LazyNativeFunctions.cpp
+Only in pytorch-v2.1.0/torch/csrc/lazy/generated: LazyNativeFunctions.h
+Only in pytorch-v2.1.0/torch/csrc/lazy/generated: LazyNonNativeIr.h
+Only in pytorch-v2.1.0/torch/csrc/lazy/generated: RegisterAutogradLazy.cpp
+Only in pytorch-v2.1.0/torch/csrc/lazy/generated: RegisterLazy.cpp
+Only in pytorch-v2.1.0/torch/nn: functional.pyi
+Only in pytorch-v2.1.0/torch: return_types.pyi
+Only in pytorch-v2.1.0/torch/testing/_internal/generated: annotated_fn_args.py
+Only in pytorch-v2.1.0/torch/utils/data/datapipes: datapipe.pyi
+Only in pytorch-v2.1.0/torch: version.py
+Only in pytorch-v2.1.0/torch: _VF.pyi
+Only in pytorch-v2.1.0/torchgen/api: __pycache__
+Only in pytorch-v2.1.0/torchgen/api/types: __pycache__
+Only in pytorch-v2.1.0/torchgen/dest: __pycache__
+Only in pytorch-v2.1.0/torchgen: __pycache__
+Only in pytorch-v2.1.0/torchgen/selective_build: __pycache__
