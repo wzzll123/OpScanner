@@ -87,9 +87,9 @@ void ScanAPIPass::report(CallBase &inst, std::vector<User*> users){
             num++;
             outs() << "The " << num << "st user: "<< *user << "\n";
             outs() << "Location is: " << getSourceLoc(*cast<Instruction>(user)) << "\n\n";
-            // if(isa<CallBase>(user)){
-            //     printFuncInfo(*cast<CallBase>(user)->getCalledFunction());
-            // }
+            if(isa<CallBase>(user)){
+                printFuncInfo(*cast<CallBase>(user)->getCalledFunction());
+            }
         }
 
     }
@@ -205,9 +205,25 @@ User* ScanAPIPass::getUserFromDefUserChain(StoreInst *storeInst){
 std::vector<User*> ScanAPIPass::getUsersFromStore(StoreInst *storeInst){
     std::vector<User*> result;
     Value *pointerOperand = storeInst->getPointerOperand();
-    // if(std::distance(pointerOperand->use_begin(),pointerOperand->use_end()) != 2){
-    //     return nullptr;
-    // }
+    // Check if the pointer operand is a GetElementPtrInst
+    if (auto *gepInst = llvm::dyn_cast<llvm::GetElementPtrInst>(pointerOperand)) {
+        // outs() << *gepInst << '\n';
+        // Get the original pointer from the GEP instruction
+        Value *originalPtr = gepInst->getPointerOperand();
+        // Now originalPtr holds the original pointer value before the GEP
+        // You can continue processing the original pointer as needed
+        for (auto user: originalPtr->users()) {
+            // most are GEP
+            if(auto *gepInst_user = llvm::dyn_cast<llvm::GetElementPtrInst>(user)){
+                for (auto next_user: gepInst_user->users()){
+                    if(!isa<StoreInst>(next_user)){
+                        result.emplace_back(next_user);
+                } 
+                }
+            }
+        }
+    }
+
     for (auto user: pointerOperand->users()) {
         // most are loadInst, sometimes call (pointer as argument)
         if(!isa<StoreInst>(user)){
@@ -241,9 +257,9 @@ void ScanAPIPass::printFuncInfo(const Function &F){
     }
     DIFile* DF = DI->getFile();
     
-    outs() << "Function name: " << DI->getName() <<"\n";
-    outs() << "Linkage name: " << DI->getLinkageName() <<"\n";
-    outs() << "Location: " << DF->getFilename() << ":" << DI->getLine() << "\n\n";
+    // outs() << "Function name: " << DI->getName() <<"\n";
+    // outs() << "Linkage name: " << DI->getLinkageName() <<"\n";
+    outs() << "Call's source location: " << DF->getFilename() << ":" << DI->getLine() << "\n\n";
 }
 
 
