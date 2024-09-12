@@ -5,7 +5,7 @@ from queue import Queue
 import csv
 import math
 import sys
-
+np.random.seed(42)
 
 def tf_execute(input_kargs, opname):
     if opname == "softplus_backward":
@@ -46,24 +46,20 @@ def get_diff(input_kargs, csv_writer, opname, strategy, index):
     out_32 = tf_execute(x_32, opname).numpy().astype(np.float64)
     out_64 = tf_execute(x_64, opname)
 
-    if strategy == "max":
-        diff1 = np.max(np.abs(out_16 - out_32))
-        # diff2 = np.max(np.abs(out_32 - out_64))
-    else:
-        diff1 = np.mean(np.abs(out_16 - out_32))
-        # diff2 = np.mean(np.abs(out_32 - out_64))
+    absolute_error = np.max(np.abs(out_16 - out_64))
+    relative_error = np.max(np.abs((out_16 - out_64)/out_64))
 
-    res.append(diff1)
+    res.append(relative_error)
     # res.append(diff2)
 
-    for n in out_64.numpy().ravel():
-        if math.isnan(n):
-            res.append("NAN")
-            break
+    # for n in out_64.numpy().ravel():
+    #     if math.isnan(n):
+    #         res.append("NAN")
+    #         break
 
     csv_writer.writerow(res)
     # return max(res[1:3])
-    return diff1
+    return absolute_error,relative_error
 
 
 def test_tf(opname):
@@ -78,41 +74,52 @@ def test_tf(opname):
     csv_writer2.writerow(
         [
             "No.",
-            "全局最大误差(同输入)",
-            "全局累积误差",
+            "全局最大绝对误差",
+            "全局最大相对误差",
         ]
     )
-    h_error = 0
+    global_abs_error_max = 0
+    global_rel_error_max = 0
     for i in range(rounds):
         acc_error = 0
         info = []
         info.append(i)
         index = 0
-        pre_max = 0
+        pre_abs_max = 0
+        pre_rel_max = 0
         max_index = 0
         for j in range(seed_num):
             dtype = tf.dtypes.bfloat16
-            features = tf.random.normal(shape=[1],dtype=dtype) * 10
-            gradients = tf.random.normal(shape=[1],dtype=dtype) * 10
+            shape = (1)
+            features = generate_one_input(shape,dtype)
+            gradients = generate_one_input(shape,dtype)
+            # features = tf.random.normal(shape=[1],dtype=dtype) * 10
+            # gradients = tf.random.normal(shape=[1],dtype=dtype) * 10
             input_kargs = {'features': features, 'gradients': gradients}
-            max_diff = get_diff(input_kargs, csv_writer1, opname, "mean", index)
-            acc_error += max_diff
-            if max_diff > pre_max:
+            abs_error, rel_error = get_diff(input_kargs, csv_writer1, opname, "mean", index)
+            # acc_error += max_diff
+            if abs_error > pre_abs_max:
                 print('features',features)
                 print('gradients',gradients)
-                pre_max = max_diff
+                pre_abs_max = abs_error
                 max_index = index
+            if rel_error > pre_rel_max:
+                pre_rel_max = rel_error
             index += 1
-        h_error = max(h_error, pre_max)
+        global_abs_error_max = max(global_abs_error_max, pre_abs_max)
+        global_rel_error_max = max(global_rel_error_max, pre_rel_max)
         # info.append(pre_max)
-        info.append(h_error)
-        info.append(acc_error)
+        info.append(global_abs_error_max)
+        info.append(global_rel_error_max)
         # info.append(max_index)
         csv_writer2.writerow(info)
 
     out1.close()
     out2.close()
-
+def generate_one_input(shape,dtype):
+    np_x = np.random.randn(shape)
+    x = tf.convert_to_tensor(np_x,dtype=dtype)*10
+    return x
 if __name__ == '__main__':
     gpus = tf.config.experimental.list_physical_devices('GPU')
     if gpus:

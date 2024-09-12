@@ -1,0 +1,734 @@
+Files already downloaded and verified
+Files already downloaded and verified
+50000 10000
+
+  0%|          | 0/40 [00:00<?, ?it/s]weight diff: 9.757218845385385e-09
+weight diff: 3.2848313416544705e-08
+weight diff: 6.687010736805554e-08
+weight diff: 9.425885461045169e-08
+weight diff: 1.2766567553113006e-07
+weight diff: 1.4839215689566032e-07
+weight diff: 1.9584928923066514e-07
+weight diff: 2.2173279567994086e-07
+weight diff: 2.6326765867334956e-07
+weight diff: 3.110473379974721e-07
+weight diff: 3.3667643595247654e-07
+weight diff: 3.6679740533784866e-07
+weight diff: 4.048200652473355e-07
+weight diff: 4.5666468717620035e-07
+weight diff: 4.926916505887391e-07
+
+Epoch 1:   0%|          | 0/40 [00:03<?, ?it/s]
+Epoch 1:   2%|▎         | 1/40 [00:03<02:23,  3.68s/it]train loss: 1.5718, val loss: 1.3410, accuracy: 51.60%, 
+weight diff: 5.687396453790683e-07
+weight diff: 6.062289648056662e-07
+weight diff: 6.565484902409935e-07
+weight diff: 7.031118107736489e-07
+weight diff: 7.887643529436161e-07
+weight diff: 8.203260879469099e-07
+weight diff: 8.212777649063696e-07
+weight diff: 9.15901182896306e-07
+weight diff: 9.915359280299185e-07
+weight diff: 1.0276438517919928e-06
+weight diff: 1.094467851903147e-06
+weight diff: 1.1464642195591068e-06
+weight diff: 1.2306261933936469e-06
+weight diff: 1.2645648235221074e-06
+weight diff: 1.3501065518894961e-06
+
+Epoch 2:   2%|▎         | 1/40 [00:07<02:23,  3.68s/it]
+Epoch 2:   5%|▌         | 2/40 [00:07<02:18,  3.64s/it]train loss: 1.2218, val loss: 1.2394, accuracy: 56.12%, 
+weight diff: 1.454742673878684e-06
+weight diff: 1.460423274757261e-06
+weight diff: 1.4987013190470577e-06
+weight diff: 1.5802667259201542e-06
+weight diff: 1.6238218516484437e-06
+weight diff: 1.7246204455645398e-06
+weight diff: 1.8143348912147417e-06
+weight diff: 1.8694825172360652e-06
+weight diff: 1.9136643460981873e-06
+weight diff: 1.9686555177145237e-06
+weight diff: 2.0069431627689482e-06
+weight diff: 2.014804275418669e-06
+weight diff: 2.028800500930572e-06
+weight diff: 2.100283309047768e-06
+weight diff: 2.126389956558228e-06
+
+Epoch 3:   5%|▌         | 2/40 [00:10<02:18,  3.64s/it]
+Epoch 3:   8%|▊         | 3/40 [00:10<02:12,  3.57s/it]train loss: 1.0829, val loss: 1.1518, accuracy: 58.97%, 
+weight diff: 2.190521380285304e-06
+weight diff: 2.295706020838395e-06
+weight diff: 2.350000495532356e-06
+weight diff: 2.4250357713029302e-06
+weight diff: 2.45768460693796e-06
+weight diff: 2.4552576576297724e-06
+weight diff: 2.5616703567266086e-06
+weight diff: 2.603648008303594e-06
+weight diff: 2.6430643060848524e-06
+weight diff: 2.7686779482394286e-06
+weight diff: 2.8335611057528354e-06
+weight diff: 2.89405996856118e-06
+weight diff: 2.894015942445094e-06
+weight diff: 2.942611290635e-06
+weight diff: 2.9994669130672946e-06
+
+Epoch 4:   8%|▊         | 3/40 [00:14<02:12,  3.57s/it]
+Epoch 4:  10%|█         | 4/40 [00:14<02:06,  3.51s/it]train loss: 0.9862, val loss: 1.0994, accuracy: 61.18%, 
+weight diff: 2.994665006639252e-06
+weight diff: 3.1351412577151905e-06
+weight diff: 3.2052472249688435e-06
+weight diff: 3.2920956885007513e-06
+weight diff: 3.398435580059811e-06
+weight diff: 3.4637142167781576e-06
+weight diff: 3.5385771655072062e-06
+weight diff: 3.6463463484182057e-06
+weight diff: 3.7216163164544014e-06
+weight diff: 3.8126040511343717e-06
+weight diff: 3.816587331506582e-06
+weight diff: 3.87362396558899e-06
+weight diff: 3.977095438756351e-06
+weight diff: 4.085480536986097e-06
+weight diff: 4.0789745305858105e-06
+
+Epoch 5:  10%|█         | 4/40 [00:17<02:06,  3.51s/it]
+Epoch 5:  12%|█▎        | 5/40 [00:17<02:00,  3.46s/it]train loss: 0.9101, val loss: 1.0797, accuracy: 61.97%, 
+weight diff: 4.204331702339914e-06
+weight diff: 4.27409648651178e-06
+weight diff: 4.355160717395279e-06
+weight diff: 4.397427476376947e-06
+weight diff: 4.424715974948867e-06
+weight diff: 4.493448818365664e-06
+weight diff: 4.613719459811705e-06
+weight diff: 4.72229115899836e-06
+weight diff: 4.78928854796834e-06
+weight diff: 4.8033346811138244e-06
+weight diff: 4.874524114129031e-06
+weight diff: 4.995019981635096e-06
+weight diff: 5.178522140880659e-06
+weight diff: 5.203378030671502e-06
+weight diff: 5.2888334387546365e-06
+
+Epoch 6:  12%|█▎        | 5/40 [00:21<02:00,  3.46s/it]
+Epoch 6:  15%|█▌        | 6/40 [00:21<01:57,  3.47s/it]train loss: 0.8372, val loss: 1.0585, accuracy: 62.66%, 
+weight diff: 5.4778712286207565e-06
+weight diff: 5.56327198530937e-06
+weight diff: 5.6085046260534455e-06
+weight diff: 5.758300535063654e-06
+weight diff: 5.777155269726109e-06
+weight diff: 5.833337525018578e-06
+weight diff: 5.9660412627948745e-06
+weight diff: 6.100127762920238e-06
+weight diff: 6.124681439345636e-06
+weight diff: 6.1786328053869966e-06
+weight diff: 6.288330657966412e-06
+weight diff: 6.479252695257287e-06
+weight diff: 6.560250440657001e-06
+weight diff: 6.703588741885369e-06
+weight diff: 6.775290987803828e-06
+
+Epoch 7:  15%|█▌        | 6/40 [00:24<01:57,  3.47s/it]
+Epoch 7:  18%|█▊        | 7/40 [00:24<01:52,  3.42s/it]train loss: 0.7716, val loss: 1.0550, accuracy: 63.93%, 
+weight diff: 6.930400790139402e-06
+weight diff: 7.020317561057254e-06
+weight diff: 7.125946137165329e-06
+weight diff: 7.184692639938817e-06
+weight diff: 7.330252939752313e-06
+weight diff: 7.335214235126841e-06
+weight diff: 7.4128521969640815e-06
+weight diff: 7.562619533274528e-06
+weight diff: 7.661668753655704e-06
+weight diff: 7.781943111240253e-06
+weight diff: 7.816664092885617e-06
+weight diff: 7.97983545730574e-06
+weight diff: 8.091400035326046e-06
+weight diff: 8.216070380484553e-06
+weight diff: 8.447287491719635e-06
+
+Epoch 8:  18%|█▊        | 7/40 [00:27<01:52,  3.42s/it]
+Epoch 8:  20%|██        | 8/40 [00:27<01:48,  3.39s/it]train loss: 0.7135, val loss: 1.0015, accuracy: 65.30%, 
+weight diff: 8.601673291863676e-06
+weight diff: 8.781582373273977e-06
+weight diff: 8.846257848915684e-06
+weight diff: 9.082879348198958e-06
+weight diff: 9.100429922526132e-06
+weight diff: 9.184043216592386e-06
+weight diff: 9.391633225774854e-06
+weight diff: 9.559750267840172e-06
+weight diff: 9.612446286055842e-06
+weight diff: 9.78362510295483e-06
+weight diff: 9.957628794410311e-06
+weight diff: 1.0074000840631925e-05
+weight diff: 1.0126547003608266e-05
+weight diff: 1.0357794046456092e-05
+weight diff: 1.039761160726016e-05
+
+Epoch 9:  20%|██        | 8/40 [00:31<01:48,  3.39s/it]
+Epoch 9:  22%|██▎       | 9/40 [00:31<01:46,  3.43s/it]train loss: 0.6518, val loss: 1.0048, accuracy: 65.46%, 
+weight diff: 1.0502991578675847e-05
+weight diff: 1.0560516432889244e-05
+weight diff: 1.0761881714671517e-05
+weight diff: 1.0930954324805953e-05
+weight diff: 1.1017079554420661e-05
+weight diff: 1.123044213358071e-05
+weight diff: 1.1303584010136092e-05
+weight diff: 1.1385083695358844e-05
+weight diff: 1.1281186619527261e-05
+weight diff: 1.1495176821085806e-05
+weight diff: 1.1548942932648742e-05
+weight diff: 1.1632669270511542e-05
+weight diff: 1.1798378604765958e-05
+weight diff: 1.1832501570552267e-05
+weight diff: 1.1983313598307177e-05
+
+Epoch 10:  22%|██▎       | 9/40 [00:34<01:46,  3.43s/it]
+Epoch 10:  25%|██▌       | 10/40 [00:34<01:42,  3.42s/it]train loss: 0.5997, val loss: 1.0178, accuracy: 65.48%, 
+weight diff: 1.217871568570672e-05
+weight diff: 1.2459852339219424e-05
+weight diff: 1.2729637447250752e-05
+weight diff: 1.2716791651712356e-05
+weight diff: 1.2808027658905985e-05
+weight diff: 1.3000658846351598e-05
+weight diff: 1.3080077714278104e-05
+weight diff: 1.3226351079254073e-05
+weight diff: 1.325259574613824e-05
+weight diff: 1.3417621381961453e-05
+weight diff: 1.3614622766056073e-05
+weight diff: 1.3699824670254657e-05
+weight diff: 1.3738283378472715e-05
+weight diff: 1.3902767086904078e-05
+weight diff: 1.4043731646040669e-05
+
+Epoch 11:  25%|██▌       | 10/40 [00:38<01:42,  3.42s/it]
+Epoch 11:  28%|██▊       | 11/40 [00:38<01:39,  3.44s/it]train loss: 0.5464, val loss: 1.0214, accuracy: 64.87%, 
+weight diff: 1.4213566274179357e-05
+weight diff: 1.4405854322774303e-05
+weight diff: 1.4442568964767588e-05
+weight diff: 1.4521408168377548e-05
+weight diff: 1.4720133094670018e-05
+weight diff: 1.4896188524460285e-05
+weight diff: 1.5209609642852229e-05
+weight diff: 1.5229639423353092e-05
+weight diff: 1.5490039000809475e-05
+weight diff: 1.5699743567409996e-05
+weight diff: 1.5833595242042975e-05
+weight diff: 1.5927853965536087e-05
+weight diff: 1.611870245099567e-05
+weight diff: 1.6163553596015845e-05
+weight diff: 1.6283007667539096e-05
+
+Epoch 12:  28%|██▊       | 11/40 [00:41<01:39,  3.44s/it]
+Epoch 12:  30%|███       | 12/40 [00:41<01:34,  3.39s/it]train loss: 0.4921, val loss: 1.0279, accuracy: 65.64%, 
+weight diff: 1.65929340845139e-05
+weight diff: 1.674130689011122e-05
+weight diff: 1.6923526711565273e-05
+weight diff: 1.7013241855323713e-05
+weight diff: 1.7140689859473923e-05
+weight diff: 1.728581956328412e-05
+weight diff: 1.7431339223605846e-05
+weight diff: 1.7451839060100838e-05
+weight diff: 1.7645225245388474e-05
+weight diff: 1.7745733654095375e-05
+weight diff: 1.8084433396126087e-05
+weight diff: 1.8127874795936805e-05
+weight diff: 1.842890211634085e-05
+weight diff: 1.854172308668467e-05
+weight diff: 1.884358415082943e-05
+
+Epoch 13:  30%|███       | 12/40 [00:44<01:34,  3.39s/it]
+Epoch 13:  32%|███▎      | 13/40 [00:44<01:30,  3.36s/it]train loss: 0.4430, val loss: 1.0296, accuracy: 66.27%, 
+weight diff: 1.9049385119984663e-05
+weight diff: 1.9306115731865248e-05
+weight diff: 1.9333351602313087e-05
+weight diff: 1.9520632235980884e-05
+weight diff: 1.9557935974745533e-05
+weight diff: 1.994008828631877e-05
+weight diff: 2.0037863258437483e-05
+weight diff: 2.0125539382576108e-05
+weight diff: 2.0339386598067222e-05
+weight diff: 2.0365266681920957e-05
+weight diff: 2.044070066986592e-05
+weight diff: 2.0590303016376765e-05
+weight diff: 2.0789029736789644e-05
+weight diff: 2.081637402540082e-05
+weight diff: 2.115841706995525e-05
+
+Epoch 14:  32%|███▎      | 13/40 [00:47<01:30,  3.36s/it]
+Epoch 14:  35%|███▌      | 14/40 [00:47<01:26,  3.35s/it]train loss: 0.3941, val loss: 1.0498, accuracy: 66.51%, 
+weight diff: 2.142098664137393e-05
+weight diff: 2.1677907881212377e-05
+weight diff: 2.1688779966666516e-05
+weight diff: 2.1978476098638566e-05
+weight diff: 2.222427344378275e-05
+weight diff: 2.2214009199217344e-05
+weight diff: 2.2436015598259473e-05
+weight diff: 2.2549248619441187e-05
+weight diff: 2.2946718431171576e-05
+weight diff: 2.3263433725162486e-05
+weight diff: 2.3498784265996164e-05
+weight diff: 2.3640225613519306e-05
+weight diff: 2.3771339620282106e-05
+weight diff: 2.3761701442026606e-05
+weight diff: 2.401770743176712e-05
+
+Epoch 15:  35%|███▌      | 14/40 [00:51<01:26,  3.35s/it]
+Epoch 15:  38%|███▊      | 15/40 [00:51<01:23,  3.34s/it]train loss: 0.3441, val loss: 1.0273, accuracy: 67.03%, 
+weight diff: 2.41766107649255e-05
+weight diff: 2.4347298989368937e-05
+weight diff: 2.451688981608413e-05
+weight diff: 2.4751680250290065e-05
+weight diff: 2.480388532433153e-05
+weight diff: 2.50387729821e-05
+weight diff: 2.5181049736033856e-05
+weight diff: 2.539565318215864e-05
+weight diff: 2.5521829705610344e-05
+weight diff: 2.591074802893445e-05
+weight diff: 2.617231631774075e-05
+weight diff: 2.6257407469643113e-05
+weight diff: 2.6528026658922954e-05
+weight diff: 2.65222844575419e-05
+weight diff: 2.6464928396308096e-05
+
+Epoch 16:  38%|███▊      | 15/40 [00:54<01:23,  3.34s/it]
+Epoch 16:  40%|████      | 16/40 [00:54<01:20,  3.37s/it]train loss: 0.3006, val loss: 1.0441, accuracy: 67.47%, 
+weight diff: 2.660091272588261e-05
+weight diff: 2.6650167768593747e-05
+weight diff: 2.690049807796413e-05
+weight diff: 2.7212353252537014e-05
+weight diff: 2.7134684174257018e-05
+weight diff: 2.7366970201114782e-05
+weight diff: 2.7684949785111712e-05
+weight diff: 2.783817367202346e-05
+weight diff: 2.786943333887848e-05
+weight diff: 2.8105802719835538e-05
+weight diff: 2.8409059275702475e-05
+weight diff: 2.8642655557575836e-05
+weight diff: 2.8713636389454678e-05
+weight diff: 2.8886941954908707e-05
+weight diff: 2.9277143951844664e-05
+
+Epoch 17:  40%|████      | 16/40 [00:58<01:20,  3.37s/it]
+Epoch 17:  42%|████▎     | 17/40 [00:58<01:16,  3.35s/it]train loss: 0.2619, val loss: 1.0612, accuracy: 67.67%, 
+weight diff: 2.9313115540219314e-05
+weight diff: 2.9673010175201853e-05
+weight diff: 2.9599898617505005e-05
+weight diff: 2.9759850626476236e-05
+weight diff: 2.9899663473997862e-05
+weight diff: 3.025919202315208e-05
+weight diff: 3.0389717068146638e-05
+weight diff: 3.0495053010781703e-05
+weight diff: 3.069991461757127e-05
+weight diff: 3.0898884382679626e-05
+weight diff: 3.08982523122836e-05
+weight diff: 3.085047462292323e-05
+weight diff: 3.105850101547958e-05
+weight diff: 3.139869299673137e-05
+weight diff: 3.152383983007212e-05
+
+Epoch 18:  42%|████▎     | 17/40 [01:01<01:16,  3.35s/it]
+Epoch 18:  45%|████▌     | 18/40 [01:01<01:12,  3.31s/it]train loss: 0.2157, val loss: 1.0567, accuracy: 67.79%, 
+weight diff: 3.1634158311533156e-05
+weight diff: 3.189354545440892e-05
+weight diff: 3.216120785509702e-05
+weight diff: 3.221490217697465e-05
+weight diff: 3.242430211969349e-05
+weight diff: 3.2578558489149145e-05
+weight diff: 3.2842355999207484e-05
+weight diff: 3.3083801653788214e-05
+weight diff: 3.328551880343866e-05
+weight diff: 3.3458442359801666e-05
+weight diff: 3.35414586984939e-05
+weight diff: 3.3717793627374704e-05
+weight diff: 3.398219028127869e-05
+weight diff: 3.391715551259722e-05
+weight diff: 3.403302831372912e-05
+
+Epoch 19:  45%|████▌     | 18/40 [01:04<01:12,  3.31s/it]
+Epoch 19:  48%|████▊     | 19/40 [01:04<01:09,  3.30s/it]train loss: 0.1803, val loss: 1.0855, accuracy: 68.35%, 
+weight diff: 3.425344746688097e-05
+weight diff: 3.419830994033646e-05
+weight diff: 3.444106080507936e-05
+weight diff: 3.4629624124704605e-05
+weight diff: 3.459537894201503e-05
+weight diff: 3.475132562869021e-05
+weight diff: 3.510097060654971e-05
+weight diff: 3.5145213153953136e-05
+weight diff: 3.5444560509745315e-05
+weight diff: 3.534035155894344e-05
+weight diff: 3.576152737139182e-05
+weight diff: 3.589805056947171e-05
+weight diff: 3.6024240557708254e-05
+weight diff: 3.6164944468453086e-05
+weight diff: 3.6318188271877716e-05
+
+Epoch 20:  48%|████▊     | 19/40 [01:07<01:09,  3.30s/it]
+Epoch 20:  50%|█████     | 20/40 [01:07<01:05,  3.28s/it]train loss: 0.1473, val loss: 1.1345, accuracy: 67.88%, 
+weight diff: 3.6400617368315125e-05
+weight diff: 3.641632052620025e-05
+weight diff: 3.6705927023206186e-05
+weight diff: 3.688935407097915e-05
+weight diff: 3.696678728459801e-05
+weight diff: 3.703305343805141e-05
+weight diff: 3.709381444139126e-05
+weight diff: 3.7483958763573355e-05
+weight diff: 3.759224735233602e-05
+weight diff: 3.7575787786181536e-05
+weight diff: 3.780422856181076e-05
+weight diff: 3.783421757219685e-05
+weight diff: 3.81430544322825e-05
+weight diff: 3.815037187848702e-05
+weight diff: 3.812206460906964e-05
+
+Epoch 21:  50%|█████     | 20/40 [01:11<01:05,  3.28s/it]
+Epoch 21:  52%|█████▎    | 21/40 [01:11<01:02,  3.27s/it]train loss: 0.1198, val loss: 1.1829, accuracy: 67.65%, 
+weight diff: 3.847204865792264e-05
+weight diff: 3.848230129932517e-05
+weight diff: 3.842981032420312e-05
+weight diff: 3.8644098040663266e-05
+weight diff: 3.893321407133499e-05
+weight diff: 3.918771860611514e-05
+weight diff: 3.9095000289535164e-05
+weight diff: 3.913370855457288e-05
+weight diff: 3.941126381334925e-05
+weight diff: 3.943858517629906e-05
+weight diff: 3.959089782767933e-05
+weight diff: 3.9758804227574274e-05
+weight diff: 4.0009696306242404e-05
+weight diff: 4.0103853685025115e-05
+weight diff: 4.044940656200424e-05
+
+Epoch 22:  52%|█████▎    | 21/40 [01:14<01:02,  3.27s/it]
+Epoch 22:  55%|█████▌    | 22/40 [01:14<00:59,  3.31s/it]train loss: 0.0921, val loss: 1.1697, accuracy: 68.27%, 
+weight diff: 4.0640925590196275e-05
+weight diff: 4.07334797216663e-05
+weight diff: 4.0724805828062927e-05
+weight diff: 4.0941106696834595e-05
+weight diff: 4.102501860359098e-05
+weight diff: 4.1177914646084446e-05
+weight diff: 4.1289499776553384e-05
+weight diff: 4.125199258453449e-05
+weight diff: 4.13001862824558e-05
+weight diff: 4.138755190297161e-05
+weight diff: 4.164042500320875e-05
+weight diff: 4.170216038090757e-05
+weight diff: 4.183318328898622e-05
+weight diff: 4.199440587626668e-05
+weight diff: 4.202327586000365e-05
+
+Epoch 23:  55%|█████▌    | 22/40 [01:17<00:59,  3.31s/it]
+Epoch 23:  57%|█████▊    | 23/40 [01:17<00:56,  3.35s/it]train loss: 0.0728, val loss: 1.1956, accuracy: 68.76%, 
+weight diff: 4.2221550557997034e-05
+weight diff: 4.221300716267251e-05
+weight diff: 4.2308883777764095e-05
+weight diff: 4.244404034636773e-05
+weight diff: 4.2369598070024495e-05
+weight diff: 4.2519517450045896e-05
+weight diff: 4.2721539614376525e-05
+weight diff: 4.271506195152597e-05
+weight diff: 4.288710312039257e-05
+weight diff: 4.2989484938971145e-05
+weight diff: 4.318573022032979e-05
+weight diff: 4.316606137422241e-05
+weight diff: 4.332605672630052e-05
+weight diff: 4.352744308278034e-05
+weight diff: 4.367856371345624e-05
+
+Epoch 24:  57%|█████▊    | 23/40 [01:21<00:56,  3.35s/it]
+Epoch 24:  60%|██████    | 24/40 [01:21<00:53,  3.34s/it]train loss: 0.0559, val loss: 1.2157, accuracy: 68.21%, 
+weight diff: 4.379693626788139e-05
+weight diff: 4.39134911331962e-05
+weight diff: 4.39807562102601e-05
+weight diff: 4.4096256182513116e-05
+weight diff: 4.4302980768406997e-05
+weight diff: 4.4373911165962454e-05
+weight diff: 4.443117413188702e-05
+weight diff: 4.452163708634771e-05
+weight diff: 4.450795938026886e-05
+weight diff: 4.4609021813357685e-05
+weight diff: 4.4884474604600655e-05
+weight diff: 4.49963326545344e-05
+weight diff: 4.5165753206788395e-05
+weight diff: 4.515063154286736e-05
+weight diff: 4.525735212723703e-05
+
+Epoch 25:  60%|██████    | 24/40 [01:24<00:53,  3.34s/it]
+Epoch 25:  62%|██████▎   | 25/40 [01:24<00:50,  3.35s/it]train loss: 0.0446, val loss: 1.2334, accuracy: 68.66%, 
+weight diff: 4.53987314088522e-05
+weight diff: 4.538720947522279e-05
+weight diff: 4.539577940931849e-05
+weight diff: 4.5448219033517034e-05
+weight diff: 4.5520652200536915e-05
+weight diff: 4.56482943675951e-05
+weight diff: 4.574475271112988e-05
+weight diff: 4.571108726736384e-05
+weight diff: 4.5925010894620755e-05
+weight diff: 4.60115337190814e-05
+weight diff: 4.600201212667798e-05
+weight diff: 4.6070719989188547e-05
+weight diff: 4.619374922754105e-05
+weight diff: 4.63117454430062e-05
+weight diff: 4.6389650869116394e-05
+
+Epoch 26:  62%|██████▎   | 25/40 [01:27<00:50,  3.35s/it]
+Epoch 26:  65%|██████▌   | 26/40 [01:27<00:47,  3.36s/it]train loss: 0.0348, val loss: 1.2664, accuracy: 68.68%, 
+weight diff: 4.642565826884493e-05
+weight diff: 4.64600557279482e-05
+weight diff: 4.6475619690511394e-05
+weight diff: 4.650234426151201e-05
+weight diff: 4.6591573806153974e-05
+weight diff: 4.663080084554849e-05
+weight diff: 4.672151266760238e-05
+weight diff: 4.6766182592250516e-05
+weight diff: 4.6773481038542286e-05
+weight diff: 4.682974827119324e-05
+weight diff: 4.689945458835609e-05
+weight diff: 4.7001907681476496e-05
+weight diff: 4.7041015946547304e-05
+weight diff: 4.7089217993345756e-05
+weight diff: 4.7207890673917063e-05
+
+Epoch 27:  65%|██████▌   | 26/40 [01:31<00:47,  3.36s/it]
+Epoch 27:  68%|██████▊   | 27/40 [01:31<00:43,  3.33s/it]train loss: 0.0280, val loss: 1.2821, accuracy: 68.83%, 
+weight diff: 4.7261585258695504e-05
+weight diff: 4.73218959911037e-05
+weight diff: 4.7360981788813206e-05
+weight diff: 4.7420851331025915e-05
+weight diff: 4.755207192630451e-05
+weight diff: 4.763975820054611e-05
+weight diff: 4.7643863098301154e-05
+weight diff: 4.765673248385838e-05
+weight diff: 4.76444118291397e-05
+weight diff: 4.776324487920647e-05
+weight diff: 4.7826021400965146e-05
+weight diff: 4.786451034988204e-05
+weight diff: 4.7947381716539894e-05
+weight diff: 4.8075409303294236e-05
+weight diff: 4.812424927536085e-05
+
+Epoch 28:  68%|██████▊   | 27/40 [01:34<00:43,  3.33s/it]
+Epoch 28:  70%|███████   | 28/40 [01:34<00:39,  3.30s/it]train loss: 0.0236, val loss: 1.2929, accuracy: 69.02%, 
+weight diff: 4.8202323306156813e-05
+weight diff: 4.8254047520401855e-05
+weight diff: 4.829398186245726e-05
+weight diff: 4.832256011155778e-05
+weight diff: 4.843371959140086e-05
+weight diff: 4.8484706255180754e-05
+weight diff: 4.850759955843387e-05
+weight diff: 4.859289828829105e-05
+weight diff: 4.866936121317167e-05
+weight diff: 4.8745819377415955e-05
+weight diff: 4.877087627619403e-05
+weight diff: 4.882646180703887e-05
+weight diff: 4.8891993003508105e-05
+weight diff: 4.900680938391133e-05
+weight diff: 4.902423636110598e-05
+
+Epoch 29:  70%|███████   | 28/40 [01:37<00:39,  3.30s/it]
+Epoch 29:  72%|███████▎  | 29/40 [01:37<00:36,  3.32s/it]train loss: 0.0197, val loss: 1.3168, accuracy: 69.02%, 
+weight diff: 4.9120951878478536e-05
+weight diff: 4.9168297294954755e-05
+weight diff: 4.9227871095069986e-05
+weight diff: 4.9256598934732665e-05
+weight diff: 4.93062078774642e-05
+weight diff: 4.932597964568686e-05
+weight diff: 4.937820541783822e-05
+weight diff: 4.9407409562718385e-05
+weight diff: 4.9452903539304316e-05
+weight diff: 4.9546266915001524e-05
+weight diff: 4.9567393709537555e-05
+weight diff: 4.9679432521543276e-05
+weight diff: 4.971572828793569e-05
+weight diff: 4.97224123421347e-05
+weight diff: 4.978322807858149e-05
+
+Epoch 30:  72%|███████▎  | 29/40 [01:41<00:36,  3.32s/it]
+Epoch 30:  75%|███████▌  | 30/40 [01:41<00:33,  3.34s/it]train loss: 0.0170, val loss: 1.3350, accuracy: 68.76%, 
+weight diff: 4.983541563063909e-05
+weight diff: 4.984291642529115e-05
+weight diff: 4.993899106864319e-05
+weight diff: 4.9988263441491654e-05
+weight diff: 5.00539665253541e-05
+weight diff: 5.00999240244937e-05
+weight diff: 5.0109613610516135e-05
+weight diff: 5.014099036770858e-05
+weight diff: 5.0189274773515535e-05
+weight diff: 5.024798690556054e-05
+weight diff: 5.0324409734514575e-05
+weight diff: 5.0319591977654454e-05
+weight diff: 5.037915753547395e-05
+weight diff: 5.041296337537915e-05
+weight diff: 5.0469717955081705e-05
+
+Epoch 31:  75%|███████▌  | 30/40 [01:44<00:33,  3.34s/it]
+Epoch 31:  78%|███████▊  | 31/40 [01:44<00:29,  3.32s/it]train loss: 0.0150, val loss: 1.3567, accuracy: 68.91%, 
+weight diff: 5.048795046036503e-05
+weight diff: 5.0545403261992305e-05
+weight diff: 5.0608680957964225e-05
+weight diff: 5.0590327902000354e-05
+weight diff: 5.064276262345402e-05
+weight diff: 5.0645612091670955e-05
+weight diff: 5.069365808907378e-05
+weight diff: 5.072037780706751e-05
+weight diff: 5.076468853815186e-05
+weight diff: 5.082998225702795e-05
+weight diff: 5.087480739263128e-05
+weight diff: 5.090984154776379e-05
+weight diff: 5.0945075933839234e-05
+weight diff: 5.095039105640353e-05
+weight diff: 5.1012188556853744e-05
+
+Epoch 32:  78%|███████▊  | 31/40 [01:47<00:29,  3.32s/it]
+Epoch 32:  80%|████████  | 32/40 [01:47<00:26,  3.31s/it]train loss: 0.0134, val loss: 1.3723, accuracy: 68.98%, 
+weight diff: 5.110083877468696e-05
+weight diff: 5.1127920393412296e-05
+weight diff: 5.118800961412262e-05
+weight diff: 5.123693244968308e-05
+weight diff: 5.127293378848208e-05
+weight diff: 5.132870457202898e-05
+weight diff: 5.1369103069021094e-05
+weight diff: 5.141180822931801e-05
+weight diff: 5.144696581282915e-05
+weight diff: 5.147084063139573e-05
+weight diff: 5.149619013877782e-05
+weight diff: 5.1489387935532704e-05
+weight diff: 5.156681594087331e-05
+weight diff: 5.160301314077742e-05
+weight diff: 5.163079601544496e-05
+
+Epoch 33:  80%|████████  | 32/40 [01:51<00:26,  3.31s/it]
+Epoch 33:  82%|████████▎ | 33/40 [01:51<00:23,  3.30s/it]train loss: 0.0119, val loss: 1.3866, accuracy: 68.78%, 
+weight diff: 5.171649858937144e-05
+weight diff: 5.17534377308948e-05
+weight diff: 5.178979321129873e-05
+weight diff: 5.184518668244209e-05
+weight diff: 5.186002332635553e-05
+weight diff: 5.1876267924910735e-05
+weight diff: 5.196247275307542e-05
+weight diff: 5.1970057903361067e-05
+weight diff: 5.20215279493641e-05
+weight diff: 5.2049655693053865e-05
+weight diff: 5.208100448328423e-05
+weight diff: 5.2106676093899296e-05
+weight diff: 5.214701253919429e-05
+weight diff: 5.2154861450048884e-05
+weight diff: 5.221833127677655e-05
+
+Epoch 34:  82%|████████▎ | 33/40 [01:54<00:23,  3.30s/it]
+Epoch 34:  85%|████████▌ | 34/40 [01:54<00:19,  3.31s/it]train loss: 0.0109, val loss: 1.4017, accuracy: 68.88%, 
+weight diff: 5.22462739880325e-05
+weight diff: 5.2300630159152206e-05
+weight diff: 5.2359235120036374e-05
+weight diff: 5.239002691581618e-05
+weight diff: 5.241592997151656e-05
+weight diff: 5.2403441301862586e-05
+weight diff: 5.2452975410233194e-05
+weight diff: 5.245721445135132e-05
+weight diff: 5.2485654229883494e-05
+weight diff: 5.254154953604484e-05
+weight diff: 5.2599960490340436e-05
+weight diff: 5.2577517053009615e-05
+weight diff: 5.263316938908247e-05
+weight diff: 5.267491629012966e-05
+weight diff: 5.2724297503914386e-05
+
+Epoch 35:  85%|████████▌ | 34/40 [01:57<00:19,  3.31s/it]
+Epoch 35:  88%|████████▊ | 35/40 [01:57<00:16,  3.28s/it]train loss: 0.0098, val loss: 1.4181, accuracy: 69.03%, 
+weight diff: 5.276223374295341e-05
+weight diff: 5.277969414407835e-05
+weight diff: 5.284342560685218e-05
+weight diff: 5.2875708263400156e-05
+weight diff: 5.291961200271089e-05
+weight diff: 5.294511421283232e-05
+weight diff: 5.293193434852128e-05
+weight diff: 5.296969391110906e-05
+weight diff: 5.296157343082086e-05
+weight diff: 5.299538777592261e-05
+weight diff: 5.300111267558805e-05
+weight diff: 5.305204406624853e-05
+weight diff: 5.3084197055852655e-05
+weight diff: 5.313907936255191e-05
+weight diff: 5.3151561289155325e-05
+
+Epoch 36:  88%|████████▊ | 35/40 [02:00<00:16,  3.28s/it]
+Epoch 36:  90%|█████████ | 36/40 [02:00<00:13,  3.28s/it]train loss: 0.0090, val loss: 1.4309, accuracy: 69.17%, 
+weight diff: 5.3178266483655534e-05
+weight diff: 5.3196332835625526e-05
+weight diff: 5.3221743357312334e-05
+weight diff: 5.328910540214338e-05
+weight diff: 5.332977276140127e-05
+weight diff: 5.3338354447873826e-05
+weight diff: 5.336596634464286e-05
+weight diff: 5.338640286822738e-05
+weight diff: 5.340449084911825e-05
+weight diff: 5.342932437457648e-05
+weight diff: 5.346421880858543e-05
+weight diff: 5.349295651768671e-05
+weight diff: 5.3504464176512556e-05
+weight diff: 5.353535748042759e-05
+weight diff: 5.357085090906821e-05
+
+Epoch 37:  90%|█████████ | 36/40 [02:04<00:13,  3.28s/it]
+Epoch 37:  92%|█████████▎| 37/40 [02:04<00:09,  3.31s/it]train loss: 0.0083, val loss: 1.4482, accuracy: 69.01%, 
+weight diff: 5.360149015132265e-05
+weight diff: 5.36366586985082e-05
+weight diff: 5.3657851708521775e-05
+weight diff: 5.3670951153605984e-05
+weight diff: 5.370459363973623e-05
+weight diff: 5.37643486069328e-05
+weight diff: 5.3804926203326886e-05
+weight diff: 5.383250115187366e-05
+weight diff: 5.384216068193837e-05
+weight diff: 5.387316983274104e-05
+weight diff: 5.388395145189406e-05
+weight diff: 5.386872630452899e-05
+weight diff: 5.3922097983161166e-05
+weight diff: 5.396306168137244e-05
+weight diff: 5.399721322874029e-05
+
+Epoch 38:  92%|█████████▎| 37/40 [02:07<00:09,  3.31s/it]
+Epoch 38:  95%|█████████▌| 38/40 [02:07<00:06,  3.29s/it]train loss: 0.0077, val loss: 1.4592, accuracy: 68.91%, 
+weight diff: 5.405359935650722e-05
+weight diff: 5.406692421416892e-05
+weight diff: 5.410144805040318e-05
+weight diff: 5.4147390216030544e-05
+weight diff: 5.414895227318084e-05
+weight diff: 5.4151178886741036e-05
+weight diff: 5.4143850462651244e-05
+weight diff: 5.418367452136863e-05
+weight diff: 5.4179449968216886e-05
+weight diff: 5.424193843595049e-05
+weight diff: 5.425208412646043e-05
+weight diff: 5.427862458873278e-05
+weight diff: 5.431383937093415e-05
+weight diff: 5.43562629999883e-05
+weight diff: 5.44085073528322e-05
+
+Epoch 39:  95%|█████████▌| 38/40 [02:10<00:06,  3.29s/it]
+Epoch 39:  98%|█████████▊| 39/40 [02:10<00:03,  3.29s/it]train loss: 0.0072, val loss: 1.4701, accuracy: 68.81%, 
+weight diff: 5.441176291753891e-05
+weight diff: 5.4424072878589413e-05
+weight diff: 5.444757077555096e-05
+weight diff: 5.447663406243919e-05
+weight diff: 5.45042099560078e-05
+weight diff: 5.451848986126606e-05
+weight diff: 5.4545133437500226e-05
+weight diff: 5.4587457405830264e-05
+weight diff: 5.461295945963229e-05
+weight diff: 5.46310339188949e-05
+weight diff: 5.466244901697337e-05
+weight diff: 5.468262489216613e-05
+weight diff: 5.469369969546278e-05
+weight diff: 5.473692947788322e-05
+weight diff: 5.475650709740876e-05
+
+Epoch 40:  98%|█████████▊| 39/40 [02:14<00:03,  3.29s/it]
+Epoch 40: 100%|██████████| 40/40 [02:14<00:00,  3.33s/it]
+Epoch 40: 100%|██████████| 40/40 [02:14<00:00,  3.36s/it]
+train loss: 0.0067, val loss: 1.4806, accuracy: 68.93%, 
+Traceback (most recent call last):
+  File "/home/zzwen/training/SNNs/pytorch/CIFAR10-Compare-Conv.py", line 245, in <module>
+    train_losses, val_losses, accuracies, acc, weight_diffs = fit_with_weight_diff(
+                                                              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zzwen/training/SNNs/pytorch/CIFAR10-Compare-Conv.py", line 219, in fit_with_weight_diff
+    acc = evaluate(network=best_model, data=testloader, metric=accuracy)
+                           ^^^^^^^^^^
+NameError: name 'best_model' is not defined

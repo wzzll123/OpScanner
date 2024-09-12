@@ -1,0 +1,1270 @@
+2024-08-22 20:46:37.713715: I tensorflow/core/util/port.cc:111] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-08-22 20:46:37.753606: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-08-22 20:46:37.753650: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-08-22 20:46:37.753677: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-08-22 20:46:37.760565: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-08-22 20:46:39.886034: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1886] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 1022 MB memory:  -> device: 0, name: NVIDIA RTX A6000, pci bus id: 0000:37:00.0, compute capability: 8.6
+2024-08-22 20:46:39.886509: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1886] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 46595 MB memory:  -> device: 1, name: NVIDIA RTX A6000, pci bus id: 0000:61:00.0, compute capability: 8.6
+2024-08-22 20:46:39.886859: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1886] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 43980 MB memory:  -> device: 2, name: NVIDIA RTX A6000, pci bus id: 0000:85:00.0, compute capability: 8.6
+2024-08-22 20:46:39.887181: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1886] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 46595 MB memory:  -> device: 3, name: NVIDIA RTX A6000, pci bus id: 0000:c7:00.0, compute capability: 8.6
+2024-08-22 20:46:41.090983: I tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:442] Loaded cuDNN version 8700
+  0%|          | 0/40 [00:00<?, ?it/s]2024-08-22 20:46:42.283419: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x198b9a80 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2024-08-22 20:46:42.283453: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA RTX A6000, Compute Capability 8.6
+2024-08-22 20:46:42.283458: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): NVIDIA RTX A6000, Compute Capability 8.6
+2024-08-22 20:46:42.283461: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (2): NVIDIA RTX A6000, Compute Capability 8.6
+2024-08-22 20:46:42.283464: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (3): NVIDIA RTX A6000, Compute Capability 8.6
+2024-08-22 20:46:42.340586: I ./tensorflow/compiler/jit/device_compiler.h:186] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+WARNING:tensorflow:5 out of the last 5 calls to <function _BaseOptimizer._update_step_xla at 0x7fdd88256e50> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function _BaseOptimizer._update_step_xla at 0x7fdd88256e50> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+Epoch 1:   0%|          | 0/40 [00:13<?, ?it/s]Epoch 1:   2%|▎         | 1/40 [00:13<09:01, 13.88s/it]Epoch 2:   2%|▎         | 1/40 [00:26<09:01, 13.88s/it]Epoch 2:   5%|▌         | 2/40 [00:26<08:14, 13.01s/it]Epoch 3:   5%|▌         | 2/40 [00:37<08:14, 13.01s/it]Epoch 3:   8%|▊         | 3/40 [00:37<07:36, 12.35s/it]Epoch 4:   8%|▊         | 3/40 [00:50<07:36, 12.35s/it]Epoch 4:  10%|█         | 4/40 [00:50<07:29, 12.50s/it]Epoch 5:  10%|█         | 4/40 [01:02<07:29, 12.50s/it]Epoch 5:  12%|█▎        | 5/40 [01:02<07:15, 12.45s/it]Epoch 6:  12%|█▎        | 5/40 [01:14<07:15, 12.45s/it]Epoch 6:  15%|█▌        | 6/40 [01:14<06:55, 12.21s/it]weight mse diff: 5.596794463991195e-08
+weight max diff: 0.0006990423426032066
+weight mse diff: 1.4715501572837297e-07
+weight max diff: 0.001244969666004181
+weight mse diff: 2.565918660879518e-07
+weight max diff: 0.001501394435763359
+weight mse diff: 3.542336800554935e-07
+weight max diff: 0.0016152787720784545
+weight mse diff: 5.248512797706439e-07
+weight max diff: 0.0018934346735477448
+weight mse diff: 5.945513141814018e-07
+weight max diff: 0.002010679803788662
+weight mse diff: 6.474917302323746e-07
+weight max diff: 0.0020319297909736633
+weight mse diff: 7.238353134653153e-07
+weight max diff: 0.0019341511651873589
+weight mse diff: 8.288410575651994e-07
+weight max diff: 0.00220517348498106
+weight mse diff: 9.610808042737062e-07
+weight max diff: 0.0024324096739292145
+weight mse diff: 1.0727654005115994e-06
+weight max diff: 0.0025312937796115875
+weight mse diff: 1.1930603465160061e-06
+weight max diff: 0.002484990283846855
+weight mse diff: 1.3837736485555752e-06
+weight max diff: 0.002409428358078003
+weight mse diff: 1.39439415969278e-06
+weight max diff: 0.0027488945052027702
+weight mse diff: 1.5200296559214621e-06
+weight max diff: 0.0026245824992656708
+train loss: 1.6143, val loss: 1.3661, accuracy: 52.09%, 
+weight mse diff: 1.7226711639395376e-06
+weight max diff: 0.0029445290565490723
+weight mse diff: 1.8996182591379807e-06
+weight max diff: 0.003099961206316948
+weight mse diff: 1.9975527756344036e-06
+weight max diff: 0.002789173275232315
+weight mse diff: 2.0723869358363345e-06
+weight max diff: 0.002884097397327423
+weight mse diff: 2.1900073301495127e-06
+weight max diff: 0.003258686512708664
+weight mse diff: 2.3252245862082077e-06
+weight max diff: 0.0035429075360298157
+weight mse diff: 2.3837871978571457e-06
+weight max diff: 0.003901965916156769
+weight mse diff: 2.468301097735548e-06
+weight max diff: 0.0035879723727703094
+weight mse diff: 2.502970231965662e-06
+weight max diff: 0.003988198935985565
+weight mse diff: 2.744029393042524e-06
+weight max diff: 0.0036320649087429047
+weight mse diff: 2.8043552058321097e-06
+weight max diff: 0.0038270987570285797
+weight mse diff: 2.8722676370662725e-06
+weight max diff: 0.0038257353007793427
+weight mse diff: 3.0449822059352982e-06
+weight max diff: 0.0038029211573302746
+weight mse diff: 3.20721917645983e-06
+weight max diff: 0.004071654751896858
+weight mse diff: 3.2599828383439444e-06
+weight max diff: 0.003933817148208618
+train loss: 1.1699, val loss: 1.2311, accuracy: 56.56%, 
+weight mse diff: 3.46596752365258e-06
+weight max diff: 0.004086814820766449
+weight mse diff: 3.710703225578982e-06
+weight max diff: 0.0043767765164375305
+weight mse diff: 3.8436368896554995e-06
+weight max diff: 0.004226908087730408
+weight mse diff: 3.929420628878688e-06
+weight max diff: 0.004288662225008011
+weight mse diff: 3.990158282007883e-06
+weight max diff: 0.004046415910124779
+weight mse diff: 4.09992933825265e-06
+weight max diff: 0.004065508022904396
+weight mse diff: 4.202840822031817e-06
+weight max diff: 0.004053046926856041
+weight mse diff: 4.331764522191861e-06
+weight max diff: 0.004283458925783634
+weight mse diff: 4.422111727464539e-06
+weight max diff: 0.004451759625226259
+weight mse diff: 4.5893400564267495e-06
+weight max diff: 0.004599485546350479
+weight mse diff: 4.611041335422783e-06
+weight max diff: 0.0049683693796396255
+weight mse diff: 4.769782339764106e-06
+weight max diff: 0.0050292061641812325
+weight mse diff: 4.805944300301235e-06
+weight max diff: 0.00538412481546402
+weight mse diff: 4.857147375858517e-06
+weight max diff: 0.005276338662952185
+weight mse diff: 5.127845140506793e-06
+weight max diff: 0.005182011052966118
+train loss: 1.0042, val loss: 1.1564, accuracy: 60.10%, 
+weight mse diff: 5.288827955141073e-06
+weight max diff: 0.005276283714920282
+weight mse diff: 5.446897043626109e-06
+weight max diff: 0.005432934500277042
+weight mse diff: 5.720909584283618e-06
+weight max diff: 0.005314256530255079
+weight mse diff: 5.777013477370474e-06
+weight max diff: 0.005185931455343962
+weight mse diff: 5.824518144237345e-06
+weight max diff: 0.005473247729241848
+weight mse diff: 5.7972774314407616e-06
+weight max diff: 0.005122131202369928
+weight mse diff: 6.0039100091557884e-06
+weight max diff: 0.005142258480191231
+weight mse diff: 6.209667169798649e-06
+weight max diff: 0.005584586411714554
+weight mse diff: 6.271604704011224e-06
+weight max diff: 0.005742223933339119
+weight mse diff: 6.455506195379712e-06
+weight max diff: 0.005808704532682896
+weight mse diff: 6.474628534647309e-06
+weight max diff: 0.005878792144358158
+weight mse diff: 6.562972469481565e-06
+weight max diff: 0.0057937344536185265
+weight mse diff: 6.775912538614648e-06
+weight max diff: 0.006282312795519829
+weight mse diff: 6.887990831927482e-06
+weight max diff: 0.006638719700276852
+weight mse diff: 7.10715741547574e-06
+weight max diff: 0.006420031655579805
+train loss: 0.8947, val loss: 1.0835, accuracy: 62.10%, 
+weight mse diff: 7.462611169017919e-06
+weight max diff: 0.006995593197643757
+weight mse diff: 7.724695731070597e-06
+weight max diff: 0.00686489325016737
+weight mse diff: 7.980359679748972e-06
+weight max diff: 0.006502159871160984
+weight mse diff: 8.175632597584581e-06
+weight max diff: 0.006741476245224476
+weight mse diff: 8.237648394526786e-06
+weight max diff: 0.0068139489740133286
+weight mse diff: 8.436444510095953e-06
+weight max diff: 0.006593780126422644
+weight mse diff: 8.646814382728962e-06
+weight max diff: 0.006596003659069538
+weight mse diff: 8.769809191733202e-06
+weight max diff: 0.006724328733980656
+weight mse diff: 8.95185393900988e-06
+weight max diff: 0.0066861314699053764
+weight mse diff: 9.228768984570479e-06
+weight max diff: 0.006692579481750727
+weight mse diff: 9.353054647220915e-06
+weight max diff: 0.006772634573280811
+weight mse diff: 9.402225142451925e-06
+weight max diff: 0.006805962882936001
+weight mse diff: 9.638933651245907e-06
+weight max diff: 0.007458415813744068
+weight mse diff: 9.914002998101523e-06
+weight max diff: 0.007567284163087606
+weight mse diff: 1.0277304550498911e-05
+weight max diff: 0.007482894230633974
+train loss: 0.8041, val loss: 1.0505, accuracy: 63.51%, 
+weight mse diff: 1.077629081436271e-05
+weight max diff: 0.0077933333814144135
+weight mse diff: 1.0849859343409207e-05
+weight max diff: 0.008021170273423195
+weight mse diff: 1.1092744081508954e-05
+weight max diff: 0.008082703687250614
+weight mse diff: 1.120261127951494e-05
+weight max diff: 0.007893241010606289
+weight mse diff: 1.1396177036715471e-05
+weight max diff: 0.00803358294069767
+weight mse diff: 1.1466459159947817e-05
+weight max diff: 0.007771994918584824
+weight mse diff: 1.15151171087291e-05
+weight max diff: 0.0077402968890964985
+weight mse diff: 1.171021400381278e-05
+weight max diff: 0.007481762208044529
+weight mse diff: 1.1789938625383911e-05
+weight max diff: 0.007793370634317398
+weight mse diff: 1.19017034201363e-05
+weight max diff: 0.007607745006680489
+weight mse diff: 1.2224255200976586e-05
+weight max diff: 0.007481620647013187
+weight mse diff: 1.2343140603832126e-05
+weight max diff: 0.0079794991761446
+weight mse diff: 1.2601805138956479e-05
+weight max diff: 0.00803758017718792
+weight mse diff: 1.2906113148858367e-05
+weight max diff: 0.008270381018519402
+weight mse diff: 1.3200704980675937e-05
+weight max diff: 0.008302842266857624
+train loss: 0.7190, val loss: 1.0614, accuracy: 63.15%, 
+weight mse diff: 1.3602366863096904e-05
+weight max diff: 0.008556662127375603
+weight mse diff: 1.3806152423967433e-05
+weight max diff: 0.008369803428649902
+weight mse diff: 1.4140120622840868e-05
+weight max diff: 0.00841574463993311
+weight mse diff: 1.4325406848314515e-05
+weight max diff: 0.008446117863059044
+weight mse diff: 1.4434335696478229e-05
+weight max diff: 0.00875584501773119
+weight mse diff: 1.4463503692496715e-05
+weight max diff: 0.008532236330211163
+weight mse diff: 1.481755764132231e-05
+weight max diff: 0.008340316824615002
+weight mse diff: 1.4957520342306907e-05
+weight max diff: 0.0083965128287673
+weight mse diff: 1.5117283062693332e-05
+weight max diff: 0.008327530696988106
+weight mse diff: 1.5395759582759183e-05
+weight max diff: 0.008317749947309494
+weight mse diff: 1.5505810168292555e-05
+weight max diff: 0.008609960786998272
+Epoch 7:  15%|█▌        | 6/40 [01:26<06:55, 12.21s/it]Epoch 7:  18%|█▊        | 7/40 [01:26<06:39, 12.11s/it]Epoch 8:  18%|█▊        | 7/40 [01:39<06:39, 12.11s/it]Epoch 8:  20%|██        | 8/40 [01:39<06:31, 12.23s/it]Epoch 9:  20%|██        | 8/40 [01:50<06:31, 12.23s/it]Epoch 9:  22%|██▎       | 9/40 [01:50<06:15, 12.11s/it]Epoch 10:  22%|██▎       | 9/40 [02:05<06:15, 12.11s/it]Epoch 10:  25%|██▌       | 10/40 [02:05<06:21, 12.73s/it]Epoch 11:  25%|██▌       | 10/40 [02:17<06:21, 12.73s/it]Epoch 11:  28%|██▊       | 11/40 [02:17<06:09, 12.75s/it]Epoch 12:  28%|██▊       | 11/40 [02:30<06:09, 12.75s/it]Epoch 12:  30%|███       | 12/40 [02:30<05:52, 12.58s/it]Epoch 13:  30%|███       | 12/40 [02:42<05:52, 12.58s/it]Epoch 13:  32%|███▎      | 13/40 [02:42<05:40, 12.61s/it]weight mse diff: 1.5675560376848807e-05
+weight max diff: 0.008508745580911636
+weight mse diff: 1.6096875917526177e-05
+weight max diff: 0.009004155173897743
+weight mse diff: 1.624007331457733e-05
+weight max diff: 0.009213987737894058
+weight mse diff: 1.6396688202746645e-05
+weight max diff: 0.008963694795966148
+train loss: 0.6463, val loss: 1.0164, accuracy: 65.42%, 
+weight mse diff: 1.6997219788095208e-05
+weight max diff: 0.009542674757540226
+weight mse diff: 1.7315718501720312e-05
+weight max diff: 0.009200595319271088
+weight mse diff: 1.7815815354538245e-05
+weight max diff: 0.009348802268505096
+weight mse diff: 1.824646716386269e-05
+weight max diff: 0.009027082473039627
+weight mse diff: 1.8374222108263893e-05
+weight max diff: 0.009572888724505901
+weight mse diff: 1.860165875200437e-05
+weight max diff: 0.009506933391094208
+weight mse diff: 1.861930925173283e-05
+weight max diff: 0.00951811671257019
+weight mse diff: 1.877004856964959e-05
+weight max diff: 0.009485073387622833
+weight mse diff: 1.8950327806521727e-05
+weight max diff: 0.009347096085548401
+weight mse diff: 1.904952400622051e-05
+weight max diff: 0.009501077234745026
+weight mse diff: 1.9386097669382707e-05
+weight max diff: 0.00961204245686531
+weight mse diff: 1.9453371820077336e-05
+weight max diff: 0.010035596787929535
+weight mse diff: 1.9889977480147536e-05
+weight max diff: 0.009987354278564453
+weight mse diff: 2.0177200994453415e-05
+weight max diff: 0.01008511334657669
+weight mse diff: 2.031023980464397e-05
+weight max diff: 0.00986882671713829
+train loss: 0.5770, val loss: 1.0212, accuracy: 65.41%, 
+weight mse diff: 2.0860981386761068e-05
+weight max diff: 0.010233227163553238
+weight mse diff: 2.1121697805881468e-05
+weight max diff: 0.010038904845714569
+weight mse diff: 2.1464598937370738e-05
+weight max diff: 0.01037391647696495
+weight mse diff: 2.1700988156680978e-05
+weight max diff: 0.010314632207155228
+weight mse diff: 2.189612229130944e-05
+weight max diff: 0.010069895535707474
+weight mse diff: 2.207877464854846e-05
+weight max diff: 0.010501004755496979
+weight mse diff: 2.2153310858641362e-05
+weight max diff: 0.010621186345815659
+weight mse diff: 2.2342142514730767e-05
+weight max diff: 0.010316450148820877
+weight mse diff: 2.2519415360022776e-05
+weight max diff: 0.010149096138775349
+weight mse diff: 2.2710031480244197e-05
+weight max diff: 0.010578900575637817
+weight mse diff: 2.289052200410424e-05
+weight max diff: 0.010324862785637379
+weight mse diff: 2.3063945391754714e-05
+weight max diff: 0.01086486503481865
+weight mse diff: 2.3206831308186793e-05
+weight max diff: 0.011337529867887497
+weight mse diff: 2.37852781523884e-05
+weight max diff: 0.011123672127723694
+weight mse diff: 2.4261446746720594e-05
+weight max diff: 0.011113207787275314
+train loss: 0.5124, val loss: 0.9956, accuracy: 66.84%, 
+weight mse diff: 2.463803982521995e-05
+weight max diff: 0.011600140482187271
+weight mse diff: 2.5040488871752586e-05
+weight max diff: 0.01129474863409996
+weight mse diff: 2.5522150401968702e-05
+weight max diff: 0.011868983507156372
+weight mse diff: 2.5919938984486635e-05
+weight max diff: 0.01159553974866867
+weight mse diff: 2.605565295255019e-05
+weight max diff: 0.011456586420536041
+weight mse diff: 2.6122542024609174e-05
+weight max diff: 0.011720903217792511
+weight mse diff: 2.6309536885094076e-05
+weight max diff: 0.011483121663331985
+weight mse diff: 2.6492459731741747e-05
+weight max diff: 0.011801734566688538
+weight mse diff: 2.651062425229611e-05
+weight max diff: 0.011606134474277496
+weight mse diff: 2.6576785202792053e-05
+weight max diff: 0.011654168367385864
+weight mse diff: 2.6807718441546058e-05
+weight max diff: 0.012280747294425964
+weight mse diff: 2.708086728375747e-05
+weight max diff: 0.012456845492124557
+weight mse diff: 2.741596820499126e-05
+weight max diff: 0.01240239292383194
+weight mse diff: 2.7721669468405707e-05
+weight max diff: 0.012312598526477814
+weight mse diff: 2.8302081950926095e-05
+weight max diff: 0.012670885771512985
+train loss: 0.4525, val loss: 1.0461, accuracy: 65.87%, 
+weight mse diff: 2.8553133269326736e-05
+weight max diff: 0.012596402317285538
+weight mse diff: 2.935566966755232e-05
+weight max diff: 0.012460708618164062
+weight mse diff: 2.961481258978438e-05
+weight max diff: 0.012447379529476166
+weight mse diff: 3.0043562922799083e-05
+weight max diff: 0.012416910380125046
+weight mse diff: 2.9923299393885827e-05
+weight max diff: 0.01229919120669365
+weight mse diff: 3.0162637436603745e-05
+weight max diff: 0.012249760329723358
+weight mse diff: 3.0259353380301945e-05
+weight max diff: 0.012649130076169968
+weight mse diff: 3.067645091192617e-05
+weight max diff: 0.012311913073062897
+weight mse diff: 3.086143702546451e-05
+weight max diff: 0.01238606870174408
+weight mse diff: 3.0591987105310636e-05
+weight max diff: 0.012571636587381363
+weight mse diff: 3.081172526009368e-05
+weight max diff: 0.01239055022597313
+weight mse diff: 3.107453536443927e-05
+weight max diff: 0.012822695076465607
+weight mse diff: 3.1762765551945904e-05
+weight max diff: 0.012405425310134888
+weight mse diff: 3.1885311521762105e-05
+weight max diff: 0.012645106762647629
+weight mse diff: 3.246858909022876e-05
+weight max diff: 0.012747898697853088
+train loss: 0.3907, val loss: 1.0287, accuracy: 66.07%, 
+weight mse diff: 3.2894482004053316e-05
+weight max diff: 0.013172328472137451
+weight mse diff: 3.335558596972987e-05
+weight max diff: 0.013193704187870026
+weight mse diff: 3.37703746851048e-05
+weight max diff: 0.013280965387821198
+weight mse diff: 3.4283641362264916e-05
+weight max diff: 0.013328306376934052
+weight mse diff: 3.435151342756626e-05
+weight max diff: 0.013495378196239471
+weight mse diff: 3.4355109370665105e-05
+weight max diff: 0.013998977839946747
+weight mse diff: 3.462610487758866e-05
+weight max diff: 0.013633228838443756
+weight mse diff: 3.467354566311087e-05
+weight max diff: 0.013807442039251328
+weight mse diff: 3.498947155122778e-05
+weight max diff: 0.013246864080429077
+weight mse diff: 3.495617500703929e-05
+weight max diff: 0.013716481626033783
+weight mse diff: 3.50941666127369e-05
+weight max diff: 0.01324709877371788
+weight mse diff: 3.52315082565724e-05
+weight max diff: 0.013613041490316391
+weight mse diff: 3.600906862288866e-05
+weight max diff: 0.013853199779987335
+weight mse diff: 3.632374095019486e-05
+weight max diff: 0.013648129999637604
+weight mse diff: 3.695437425221826e-05
+weight max diff: 0.013574281707406044
+train loss: 0.3316, val loss: 1.0271, accuracy: 67.62%, 
+weight mse diff: 3.7167860810427555e-05
+weight max diff: 0.013860736973583698
+weight mse diff: 3.7639243416265344e-05
+weight max diff: 0.013971734791994095
+weight mse diff: 3.826220437019856e-05
+weight max diff: 0.013856090605258942
+weight mse diff: 3.8601889684741764e-05
+weight max diff: 0.013907274231314659
+weight mse diff: 3.866003717689637e-05
+weight max diff: 0.013930801302194595
+weight mse diff: 3.887368899313515e-05
+weight max diff: 0.014378119260072708
+weight mse diff: 3.893699809509599e-05
+weight max diff: 0.014460764825344086
+weight mse diff: 3.9070018104325754e-05
+weight max diff: 0.014200512319803238
+weight mse diff: 3.912390104687802e-05
+weight max diff: 0.014118240214884281
+weight mse diff: 3.9008095214398963e-05
+weight max diff: 0.014210537075996399
+weight mse diff: 3.913250438358773e-05
+weight max diff: 0.014287620782852173
+weight mse diff: 3.9302325248513625e-05
+weight max diff: 0.014499234035611153
+weight mse diff: 3.97154495601626e-05
+weight max diff: 0.014536246657371521
+weight mse diff: 4.003612860969952e-05
+weight max diff: 0.01452360488474369
+weight mse diff: 4.065237907013852e-05
+weight max diff: 0.014518192037940025
+train loss: 0.2784, val loss: 1.0532, accuracy: 67.56%, 
+weight mse diff: 4.108476656483617e-05
+weight max diff: 0.014975279569625854
+weight mse diff: 4.1707650595412815e-05
+weight max diff: 0.014915462583303452
+weight mse diff: 4.2303229363938044e-05
+weight max diff: 0.014782309532165527
+weight mse diff: 4.281542749140499e-05
+weight max diff: 0.014885351061820984
+weight mse diff: 4.2916894116729054e-05
+weight max diff: 0.015021510422229767
+weight mse diff: 4.28562855177006e-05
+weight max diff: 0.015041662380099297
+weight mse diff: 4.324952968204343e-05
+Epoch 14:  32%|███▎      | 13/40 [02:55<05:40, 12.61s/it]Epoch 14:  35%|███▌      | 14/40 [02:55<05:32, 12.78s/it]Epoch 15:  35%|███▌      | 14/40 [03:08<05:32, 12.78s/it]Epoch 15:  38%|███▊      | 15/40 [03:08<05:21, 12.87s/it]Epoch 16:  38%|███▊      | 15/40 [03:22<05:21, 12.87s/it]Epoch 16:  40%|████      | 16/40 [03:22<05:13, 13.05s/it]Epoch 17:  40%|████      | 16/40 [03:34<05:13, 13.05s/it]Epoch 17:  42%|████▎     | 17/40 [03:34<04:53, 12.77s/it]Epoch 18:  42%|████▎     | 17/40 [03:45<04:53, 12.77s/it]Epoch 18:  45%|████▌     | 18/40 [03:45<04:29, 12.23s/it]Epoch 19:  45%|████▌     | 18/40 [03:58<04:29, 12.23s/it]Epoch 19:  48%|████▊     | 19/40 [03:58<04:19, 12.35s/it]Epoch 20:  48%|████▊     | 19/40 [04:10<04:19, 12.35s/it]Epoch 20:  50%|█████     | 20/40 [04:10<04:07, 12.39s/it]weight max diff: 0.015537060797214508
+weight mse diff: 4.3706296310119797e-05
+weight max diff: 0.015317335724830627
+weight mse diff: 4.393670035085506e-05
+weight max diff: 0.015293184667825699
+weight mse diff: 4.39181115723386e-05
+weight max diff: 0.015185955911874771
+weight mse diff: 4.39438324093544e-05
+weight max diff: 0.015091516077518463
+weight mse diff: 4.408314008230718e-05
+weight max diff: 0.015457779169082642
+weight mse diff: 4.430398897170562e-05
+weight max diff: 0.015514995902776718
+weight mse diff: 4.468857382278202e-05
+weight max diff: 0.015737183392047882
+weight mse diff: 4.516516911223789e-05
+weight max diff: 0.01612958312034607
+train loss: 0.2285, val loss: 1.0888, accuracy: 67.54%, 
+weight mse diff: 4.583206933261863e-05
+weight max diff: 0.015901565551757812
+weight mse diff: 4.6372688345286406e-05
+weight max diff: 0.015747103840112686
+weight mse diff: 4.673477823757821e-05
+weight max diff: 0.01586752012372017
+weight mse diff: 4.7198188681818465e-05
+weight max diff: 0.01576109230518341
+weight mse diff: 4.7502947225552816e-05
+weight max diff: 0.015900157392024994
+weight mse diff: 4.740839345629411e-05
+weight max diff: 0.016177287325263023
+weight mse diff: 4.7558050908946825e-05
+weight max diff: 0.015853963792324066
+weight mse diff: 4.79436007339018e-05
+weight max diff: 0.016037359833717346
+weight mse diff: 4.8027704323772014e-05
+weight max diff: 0.01612614467740059
+weight mse diff: 4.792470818415495e-05
+weight max diff: 0.016337420791387558
+weight mse diff: 4.8194081500696484e-05
+weight max diff: 0.01625751331448555
+weight mse diff: 4.817997988482148e-05
+weight max diff: 0.016699258238077164
+weight mse diff: 4.8606325862010635e-05
+weight max diff: 0.01652548834681511
+weight mse diff: 4.887479144599638e-05
+weight max diff: 0.016744347289204597
+weight mse diff: 4.948381935321322e-05
+weight max diff: 0.017153866589069366
+train loss: 0.1865, val loss: 1.0954, accuracy: 67.94%, 
+weight mse diff: 4.987125414857019e-05
+weight max diff: 0.01731942594051361
+weight mse diff: 5.016870525764716e-05
+weight max diff: 0.017534121870994568
+weight mse diff: 5.072497052083236e-05
+weight max diff: 0.01734159141778946
+weight mse diff: 5.1182479367639644e-05
+weight max diff: 0.017452163621783257
+weight mse diff: 5.123760220726581e-05
+weight max diff: 0.017043882980942726
+weight mse diff: 5.131545947278937e-05
+weight max diff: 0.01747986301779747
+weight mse diff: 5.139832229872354e-05
+weight max diff: 0.017248205840587616
+weight mse diff: 5.1722704483836424e-05
+weight max diff: 0.017405401915311813
+weight mse diff: 5.190481928707413e-05
+weight max diff: 0.01756250113248825
+weight mse diff: 5.2093109303541496e-05
+weight max diff: 0.01737099699676037
+weight mse diff: 5.225354061622056e-05
+weight max diff: 0.017422359436750412
+weight mse diff: 5.239642847243431e-05
+weight max diff: 0.01748967356979847
+weight mse diff: 5.273199019484309e-05
+weight max diff: 0.017368588596582413
+weight mse diff: 5.29753618536688e-05
+weight max diff: 0.017674723640084267
+weight mse diff: 5.3357434424583516e-05
+weight max diff: 0.0175306499004364
+train loss: 0.1472, val loss: 1.1250, accuracy: 68.14%, 
+weight mse diff: 5.369536782495743e-05
+weight max diff: 0.017754029482603073
+weight mse diff: 5.439775574700434e-05
+weight max diff: 0.01763211190700531
+weight mse diff: 5.4804565451149756e-05
+weight max diff: 0.017778662964701653
+weight mse diff: 5.541163199040966e-05
+weight max diff: 0.01796526461839676
+weight mse diff: 5.559888322181905e-05
+weight max diff: 0.017888978123664856
+weight mse diff: 5.565733970058773e-05
+weight max diff: 0.018164746463298798
+weight mse diff: 5.570347707362089e-05
+weight max diff: 0.017954101786017418
+weight mse diff: 5.5931048109414405e-05
+weight max diff: 0.018110066652297974
+weight mse diff: 5.591129148285745e-05
+weight max diff: 0.018191197887063026
+weight mse diff: 5.621869205185703e-05
+weight max diff: 0.01814793050289154
+weight mse diff: 5.624044302976472e-05
+weight max diff: 0.018299687653779984
+weight mse diff: 5.6452790531125174e-05
+weight max diff: 0.018347032368183136
+weight mse diff: 5.6672349771247355e-05
+weight max diff: 0.018297407776117325
+weight mse diff: 5.7029482093184924e-05
+weight max diff: 0.01835978776216507
+weight mse diff: 5.7314446891609805e-05
+weight max diff: 0.01856837421655655
+train loss: 0.1153, val loss: 1.1582, accuracy: 68.22%, 
+weight mse diff: 5.751394752451233e-05
+weight max diff: 0.018848391249775887
+weight mse diff: 5.7819648887402764e-05
+weight max diff: 0.018735209479928017
+weight mse diff: 5.829360375741999e-05
+weight max diff: 0.018749544396996498
+weight mse diff: 5.8514633536788097e-05
+weight max diff: 0.018826410174369812
+weight mse diff: 5.870204236657628e-05
+weight max diff: 0.018986493349075317
+weight mse diff: 5.902616942421446e-05
+weight max diff: 0.01882169023156166
+weight mse diff: 5.899392868968789e-05
+weight max diff: 0.018843866884708405
+weight mse diff: 5.947186994603726e-05
+weight max diff: 0.018976030871272087
+weight mse diff: 5.961729959835793e-05
+weight max diff: 0.01902240887284279
+weight mse diff: 5.964871361641144e-05
+weight max diff: 0.019005058333277702
+weight mse diff: 5.9511145849455716e-05
+weight max diff: 0.019060028716921806
+weight mse diff: 5.9579278172350314e-05
+weight max diff: 0.01896798238158226
+weight mse diff: 5.9895107057172936e-05
+weight max diff: 0.019256390631198883
+weight mse diff: 6.023414924527515e-05
+weight max diff: 0.019281968474388123
+weight mse diff: 6.038200012881134e-05
+weight max diff: 0.019210750237107277
+train loss: 0.0915, val loss: 1.1791, accuracy: 68.15%, 
+weight mse diff: 6.078454353541929e-05
+weight max diff: 0.019412018358707428
+weight mse diff: 6.120001387444063e-05
+weight max diff: 0.019254742190241814
+weight mse diff: 6.162273317045219e-05
+weight max diff: 0.019278032705187798
+weight mse diff: 6.195684657939182e-05
+weight max diff: 0.019442416727542877
+weight mse diff: 6.207825479975781e-05
+weight max diff: 0.019721830263733864
+weight mse diff: 6.205658354474508e-05
+weight max diff: 0.01964348554611206
+weight mse diff: 6.246996480285816e-05
+weight max diff: 0.019680513069033623
+weight mse diff: 6.262401846868215e-05
+weight max diff: 0.01975809782743454
+weight mse diff: 6.290234389894067e-05
+weight max diff: 0.019673729315400124
+weight mse diff: 6.295650560161903e-05
+weight max diff: 0.0195934921503067
+weight mse diff: 6.301531782071379e-05
+weight max diff: 0.01953175663948059
+weight mse diff: 6.312367945326969e-05
+weight max diff: 0.019969120621681213
+weight mse diff: 6.319408092281265e-05
+weight max diff: 0.01965510845184326
+weight mse diff: 6.337145532597788e-05
+weight max diff: 0.019852813333272934
+weight mse diff: 6.346193214312734e-05
+weight max diff: 0.020051322877407074
+train loss: 0.0692, val loss: 1.1845, accuracy: 68.51%, 
+weight mse diff: 6.37726608090361e-05
+weight max diff: 0.019907472655177116
+weight mse diff: 6.418044171141446e-05
+weight max diff: 0.020101729780435562
+weight mse diff: 6.459787773849257e-05
+weight max diff: 0.020135536789894104
+weight mse diff: 6.459489540588947e-05
+weight max diff: 0.020259076729416847
+weight mse diff: 6.496633416475106e-05
+weight max diff: 0.020283108577132225
+weight mse diff: 6.518588797632674e-05
+weight max diff: 0.020311519503593445
+weight mse diff: 6.533115110585186e-05
+weight max diff: 0.02015165239572525
+weight mse diff: 6.532452029262004e-05
+weight max diff: 0.020225919783115387
+weight mse diff: 6.551794768938635e-05
+weight max diff: 0.02050202339887619
+weight mse diff: 6.562522622743927e-05
+weight max diff: 0.02038400247693062
+weight mse diff: 6.570339257905289e-05
+weight max diff: 0.020344510674476624
+weight mse diff: 6.563575669815691e-05
+weight max diff: 0.020474329590797424
+weight mse diff: 6.571672290078823e-05
+weight max diff: 0.020586203783750534
+weight mse diff: 6.571386846587757e-05
+weight max diff: 0.020903073251247406
+weight mse diff: 6.595243280571594e-05
+weight max diff: 0.020872067660093307
+train loss: 0.0535, val loss: 1.2077, accuracy: 68.86%, 
+weight mse diff: 6.62095067411883e-05
+weight max diff: 0.02070128172636032
+weight mse diff: 6.657213540961493e-05
+weight max diff: 0.020905163139104843
+weight mse diff: 6.685070214018651e-05
+Epoch 21:  50%|█████     | 20/40 [04:24<04:07, 12.39s/it]Epoch 21:  52%|█████▎    | 21/40 [04:24<04:04, 12.87s/it]Epoch 22:  52%|█████▎    | 21/40 [04:37<04:04, 12.87s/it]Epoch 22:  55%|█████▌    | 22/40 [04:37<03:51, 12.86s/it]Epoch 23:  55%|█████▌    | 22/40 [04:50<03:51, 12.86s/it]Epoch 23:  57%|█████▊    | 23/40 [04:50<03:38, 12.83s/it]Epoch 24:  57%|█████▊    | 23/40 [05:03<03:38, 12.83s/it]Epoch 24:  60%|██████    | 24/40 [05:03<03:26, 12.89s/it]Epoch 25:  60%|██████    | 24/40 [05:16<03:26, 12.89s/it]Epoch 25:  62%|██████▎   | 25/40 [05:16<03:15, 13.02s/it]Epoch 26:  62%|██████▎   | 25/40 [05:29<03:15, 13.02s/it]Epoch 26:  65%|██████▌   | 26/40 [05:29<03:03, 13.14s/it]weight max diff: 0.02078815922141075
+weight mse diff: 6.701144592113906e-05
+weight max diff: 0.020771272480487823
+weight mse diff: 6.705466383039038e-05
+weight max diff: 0.0208743829280138
+weight mse diff: 6.727623019742168e-05
+weight max diff: 0.020901218056678772
+weight mse diff: 6.741312424196622e-05
+weight max diff: 0.02096051350235939
+weight mse diff: 6.755808578873257e-05
+weight max diff: 0.020830031484365463
+weight mse diff: 6.783657606490578e-05
+weight max diff: 0.020978249609470367
+weight mse diff: 6.776432383048814e-05
+weight max diff: 0.020844966173171997
+weight mse diff: 6.783592654358017e-05
+weight max diff: 0.020832598209381104
+weight mse diff: 6.792510190223311e-05
+weight max diff: 0.021032966673374176
+weight mse diff: 6.79759319268669e-05
+weight max diff: 0.02098672091960907
+weight mse diff: 6.824918430936577e-05
+weight max diff: 0.02117280848324299
+weight mse diff: 6.826243880198035e-05
+weight max diff: 0.021206967532634735
+train loss: 0.0423, val loss: 1.2470, accuracy: 68.56%, 
+weight mse diff: 6.849104389061722e-05
+weight max diff: 0.021082768216729164
+weight mse diff: 6.867263746812569e-05
+weight max diff: 0.021172013133764267
+weight mse diff: 6.89610600090873e-05
+weight max diff: 0.02114040032029152
+weight mse diff: 6.90471918858293e-05
+weight max diff: 0.021171340718865395
+weight mse diff: 6.916389119737687e-05
+weight max diff: 0.021199695765972137
+weight mse diff: 6.920818285038877e-05
+weight max diff: 0.02120225876569748
+weight mse diff: 6.939940206507345e-05
+weight max diff: 0.021176660433411598
+weight mse diff: 6.939953370022067e-05
+weight max diff: 0.021152690052986145
+weight mse diff: 6.965292710958693e-05
+weight max diff: 0.021172450855374336
+weight mse diff: 6.976849165596377e-05
+weight max diff: 0.021100332960486412
+weight mse diff: 6.989947679869601e-05
+weight max diff: 0.0211515910923481
+weight mse diff: 6.993010417488676e-05
+weight max diff: 0.021198179572820663
+weight mse diff: 7.00315146673347e-05
+weight max diff: 0.02117897942662239
+weight mse diff: 7.029072085629195e-05
+weight max diff: 0.021365024149417877
+weight mse diff: 7.031465906948142e-05
+weight max diff: 0.02129407227039337
+train loss: 0.0339, val loss: 1.2560, accuracy: 68.58%, 
+weight mse diff: 7.05045557936046e-05
+weight max diff: 0.021163133904337883
+weight mse diff: 7.070441814960304e-05
+weight max diff: 0.021251102909445763
+weight mse diff: 7.09113537027406e-05
+weight max diff: 0.02115018293261528
+weight mse diff: 7.098090929957834e-05
+weight max diff: 0.021281499415636063
+weight mse diff: 7.111267366610718e-05
+weight max diff: 0.021342139691114426
+weight mse diff: 7.117609865758823e-05
+weight max diff: 0.02138548716902733
+weight mse diff: 7.12421105362182e-05
+weight max diff: 0.021297305822372437
+weight mse diff: 7.138177350896058e-05
+weight max diff: 0.021335575729608536
+weight mse diff: 7.15170014728983e-05
+weight max diff: 0.021480979397892952
+weight mse diff: 7.162073029576277e-05
+weight max diff: 0.02134629338979721
+weight mse diff: 7.159275590140624e-05
+weight max diff: 0.021443862468004227
+weight mse diff: 7.167133419727634e-05
+weight max diff: 0.021507691591978073
+weight mse diff: 7.172733735671954e-05
+weight max diff: 0.021541323512792587
+weight mse diff: 7.181912731368811e-05
+weight max diff: 0.021580016240477562
+weight mse diff: 7.199887440378916e-05
+weight max diff: 0.021601378917694092
+train loss: 0.0280, val loss: 1.2726, accuracy: 68.73%, 
+weight mse diff: 7.212652917587548e-05
+weight max diff: 0.021369751542806625
+weight mse diff: 7.23503365520628e-05
+weight max diff: 0.021484002470970154
+weight mse diff: 7.254362989783658e-05
+weight max diff: 0.021487537771463394
+weight mse diff: 7.261211180775717e-05
+weight max diff: 0.021560540422797203
+weight mse diff: 7.283820012560227e-05
+weight max diff: 0.02163238450884819
+weight mse diff: 7.27146456540595e-05
+weight max diff: 0.021582545712590218
+weight mse diff: 7.273149168440796e-05
+weight max diff: 0.02161620557308197
+weight mse diff: 7.29304688746879e-05
+weight max diff: 0.021570784971117973
+weight mse diff: 7.303784217072007e-05
+weight max diff: 0.021643636748194695
+weight mse diff: 7.310118940040411e-05
+weight max diff: 0.021560009568929672
+weight mse diff: 7.318585149107548e-05
+weight max diff: 0.021609492599964142
+weight mse diff: 7.328745364532097e-05
+weight max diff: 0.02171611785888672
+weight mse diff: 7.328283658125656e-05
+weight max diff: 0.021611273288726807
+weight mse diff: 7.340631952956755e-05
+weight max diff: 0.021644074469804764
+weight mse diff: 7.345472612030335e-05
+weight max diff: 0.02170078083872795
+train loss: 0.0231, val loss: 1.2954, accuracy: 68.68%, 
+weight mse diff: 7.35151332520445e-05
+weight max diff: 0.021573692560195923
+weight mse diff: 7.37142871969354e-05
+weight max diff: 0.021686509251594543
+weight mse diff: 7.393661508103833e-05
+weight max diff: 0.021688982844352722
+weight mse diff: 7.400242269284263e-05
+weight max diff: 0.021695829927921295
+weight mse diff: 7.410129326501647e-05
+weight max diff: 0.021810006350278854
+weight mse diff: 7.411287391789756e-05
+weight max diff: 0.02178926393389702
+weight mse diff: 7.418245260737422e-05
+weight max diff: 0.021753966808319092
+weight mse diff: 7.430925839457814e-05
+weight max diff: 0.021793724969029427
+weight mse diff: 7.442323453688005e-05
+weight max diff: 0.021842505782842636
+weight mse diff: 7.453660616363322e-05
+weight max diff: 0.021761607378721237
+weight mse diff: 7.455941806711053e-05
+weight max diff: 0.021664567291736603
+weight mse diff: 7.462246803413564e-05
+weight max diff: 0.02183624729514122
+weight mse diff: 7.464292997383382e-05
+weight max diff: 0.02180091105401516
+weight mse diff: 7.476862242583593e-05
+weight max diff: 0.0218975692987442
+weight mse diff: 7.481737441139558e-05
+weight max diff: 0.021892372518777847
+train loss: 0.0202, val loss: 1.3086, accuracy: 68.89%, 
+weight mse diff: 7.491973394735396e-05
+weight max diff: 0.02181428298354149
+weight mse diff: 7.505984882527628e-05
+weight max diff: 0.02188177779316902
+weight mse diff: 7.51724633687445e-05
+weight max diff: 0.02186531387269497
+weight mse diff: 7.525139993447283e-05
+weight max diff: 0.021906882524490356
+weight mse diff: 7.52693594563425e-05
+weight max diff: 0.021986234933137894
+weight mse diff: 7.52183188978961e-05
+weight max diff: 0.021965697407722473
+weight mse diff: 7.537852101791032e-05
+weight max diff: 0.021970760077238083
+weight mse diff: 7.549114438631932e-05
+weight max diff: 0.02197294309735298
+weight mse diff: 7.56144189040242e-05
+weight max diff: 0.022056877613067627
+weight mse diff: 7.573679303618519e-05
+weight max diff: 0.02196686342358589
+weight mse diff: 7.581612015883366e-05
+weight max diff: 0.021955329924821854
+weight mse diff: 7.575936727732824e-05
+weight max diff: 0.021978050470352173
+weight mse diff: 7.578209056191554e-05
+weight max diff: 0.022023368626832962
+weight mse diff: 7.579395172285786e-05
+weight max diff: 0.022128988057374954
+weight mse diff: 7.587859892055349e-05
+weight max diff: 0.02210969105362892
+train loss: 0.0171, val loss: 1.3284, accuracy: 68.90%, 
+weight mse diff: 7.598537794706317e-05
+weight max diff: 0.022022638469934464
+weight mse diff: 7.609583478540571e-05
+weight max diff: 0.02205754444003105
+weight mse diff: 7.618390139896292e-05
+weight max diff: 0.02207990176975727
+weight mse diff: 7.630819268911182e-05
+weight max diff: 0.022069666534662247
+weight mse diff: 7.63452613341542e-05
+weight max diff: 0.022156625986099243
+weight mse diff: 7.643712919502832e-05
+weight max diff: 0.022175289690494537
+weight mse diff: 7.648176564600817e-05
+weight max diff: 0.022166050970554352
+weight mse diff: 7.657866798638224e-05
+weight max diff: 0.02217879891395569
+weight mse diff: 7.675508561533206e-05
+weight max diff: 0.022189773619174957
+weight mse diff: 7.684080338776766e-05
+weight max diff: 0.022157495841383934
+weight mse diff: 7.6806755259895e-05
+weight max diff: 0.022112231701612473
+weight mse diff: 7.686318055277752e-05
+weight max diff: 0.022206751629710197
+weight mse diff: 7.68161190904948e-05
+weight max diff: 0.0222257599234581
+weight mse diff: 7.69133137339395e-05
+weight max diff: 0.022272076457738876
+weight mse diff: 7.698730034633172e-05
+weight max diff: 0.02229118160903454
+Epoch 27:  65%|██████▌   | 26/40 [05:43<03:03, 13.14s/it]Epoch 27:  68%|██████▊   | 27/40 [05:43<02:50, 13.11s/it]Epoch 28:  68%|██████▊   | 27/40 [05:56<02:50, 13.11s/it]Epoch 28:  70%|███████   | 28/40 [05:56<02:37, 13.11s/it]Epoch 29:  70%|███████   | 28/40 [06:08<02:37, 13.11s/it]Epoch 29:  72%|███████▎  | 29/40 [06:08<02:22, 12.92s/it]Epoch 30:  72%|███████▎  | 29/40 [06:21<02:22, 12.92s/it]Epoch 30:  75%|███████▌  | 30/40 [06:21<02:07, 12.79s/it]Epoch 31:  75%|███████▌  | 30/40 [06:34<02:07, 12.79s/it]Epoch 31:  78%|███████▊  | 31/40 [06:34<01:56, 12.91s/it]Epoch 32:  78%|███████▊  | 31/40 [06:47<01:56, 12.91s/it]Epoch 32:  80%|████████  | 32/40 [06:47<01:43, 12.97s/it]Epoch 33:  80%|████████  | 32/40 [07:00<01:43, 12.97s/it]Epoch 33:  82%|████████▎ | 33/40 [07:00<01:31, 13.12s/it]train loss: 0.0151, val loss: 1.3431, accuracy: 68.81%, 
+weight mse diff: 7.707309704585441e-05
+weight max diff: 0.022170405834913254
+weight mse diff: 7.716760175924264e-05
+weight max diff: 0.02222074195742607
+weight mse diff: 7.727620209152519e-05
+weight max diff: 0.02221778593957424
+weight mse diff: 7.727966460890912e-05
+weight max diff: 0.02222699485719204
+weight mse diff: 7.739076750112872e-05
+weight max diff: 0.022260498255491257
+weight mse diff: 7.748111352157139e-05
+weight max diff: 0.02229428105056286
+weight mse diff: 7.750118587068755e-05
+weight max diff: 0.022286290302872658
+weight mse diff: 7.766068799242021e-05
+weight max diff: 0.022263389080762863
+weight mse diff: 7.773449149794942e-05
+weight max diff: 0.022285787388682365
+weight mse diff: 7.77542735050929e-05
+weight max diff: 0.022251907736063004
+weight mse diff: 7.787111171353445e-05
+weight max diff: 0.022255022078752518
+weight mse diff: 7.782637932507441e-05
+weight max diff: 0.022320173680782318
+weight mse diff: 7.783845867948003e-05
+weight max diff: 0.022279344499111176
+weight mse diff: 7.79679446765158e-05
+weight max diff: 0.022378835827112198
+weight mse diff: 7.798154696558868e-05
+weight max diff: 0.022400470450520515
+train loss: 0.0134, val loss: 1.3609, accuracy: 68.92%, 
+weight mse diff: 7.806901194840066e-05
+weight max diff: 0.022290939465165138
+weight mse diff: 7.818440255391579e-05
+weight max diff: 0.022375300526618958
+weight mse diff: 7.823856441291355e-05
+weight max diff: 0.022366348654031754
+weight mse diff: 7.8323481886855e-05
+weight max diff: 0.022397102788090706
+weight mse diff: 7.838684882699454e-05
+weight max diff: 0.022434206679463387
+weight mse diff: 7.836689589169055e-05
+weight max diff: 0.022442754358053207
+weight mse diff: 7.843621988001814e-05
+weight max diff: 0.022448524832725525
+weight mse diff: 7.857693678658961e-05
+weight max diff: 0.022429201751947403
+weight mse diff: 7.866080308360779e-05
+weight max diff: 0.02247362583875656
+weight mse diff: 7.874684857256398e-05
+weight max diff: 0.022426486015319824
+weight mse diff: 7.87971533640075e-05
+weight max diff: 0.022392328828573227
+weight mse diff: 7.882799889102898e-05
+weight max diff: 0.022465309128165245
+weight mse diff: 7.875572252658003e-05
+weight max diff: 0.02242862991988659
+weight mse diff: 7.886775813403801e-05
+weight max diff: 0.02246474102139473
+weight mse diff: 7.890110349251245e-05
+weight max diff: 0.022473756223917007
+train loss: 0.0121, val loss: 1.3736, accuracy: 69.02%, 
+weight mse diff: 7.892137730891591e-05
+weight max diff: 0.02242009900510311
+weight mse diff: 7.901535917653746e-05
+weight max diff: 0.022451411932706833
+weight mse diff: 7.912667160780984e-05
+weight max diff: 0.02244800142943859
+weight mse diff: 7.914176134704576e-05
+weight max diff: 0.022470900788903236
+weight mse diff: 7.921641660857404e-05
+weight max diff: 0.022521208971738815
+weight mse diff: 7.921376813158076e-05
+weight max diff: 0.022550877183675766
+weight mse diff: 7.927367711602074e-05
+weight max diff: 0.02251170203089714
+weight mse diff: 7.937943797742264e-05
+weight max diff: 0.022517234086990356
+weight mse diff: 7.952261570665087e-05
+weight max diff: 0.022545238956809044
+weight mse diff: 7.956488147442542e-05
+weight max diff: 0.022482844069600105
+weight mse diff: 7.959712320371182e-05
+weight max diff: 0.022481435909867287
+weight mse diff: 7.958638622085346e-05
+weight max diff: 0.022530464455485344
+weight mse diff: 7.960199781109623e-05
+weight max diff: 0.022520000115036964
+weight mse diff: 7.96629049943931e-05
+weight max diff: 0.02256118692457676
+weight mse diff: 7.969573975685762e-05
+weight max diff: 0.022611280903220177
+train loss: 0.0109, val loss: 1.3872, accuracy: 69.01%, 
+weight mse diff: 7.971601263534467e-05
+weight max diff: 0.02251286245882511
+weight mse diff: 7.979515210365662e-05
+weight max diff: 0.02257758378982544
+weight mse diff: 7.9850828939243e-05
+weight max diff: 0.022561341524124146
+weight mse diff: 7.988894350319242e-05
+weight max diff: 0.022591285407543182
+weight mse diff: 7.99837727782915e-05
+weight max diff: 0.0226274523884058
+weight mse diff: 7.995694602414005e-05
+weight max diff: 0.0226310882717371
+weight mse diff: 7.99898604242344e-05
+weight max diff: 0.022618765011429787
+weight mse diff: 8.011793769924225e-05
+weight max diff: 0.022637130692601204
+weight mse diff: 8.018641516116531e-05
+weight max diff: 0.022633226588368416
+weight mse diff: 8.02773651997768e-05
+weight max diff: 0.022605441510677338
+weight mse diff: 8.031386470008783e-05
+weight max diff: 0.02260081097483635
+weight mse diff: 8.034643637699901e-05
+weight max diff: 0.02262832596898079
+weight mse diff: 8.032011984937526e-05
+weight max diff: 0.022663768380880356
+weight mse diff: 8.039093211209547e-05
+weight max diff: 0.0226573683321476
+weight mse diff: 8.046296198926939e-05
+weight max diff: 0.022684328258037567
+train loss: 0.0099, val loss: 1.3986, accuracy: 69.19%, 
+weight mse diff: 8.047135291633367e-05
+weight max diff: 0.022610079497098923
+weight mse diff: 8.058578191594279e-05
+weight max diff: 0.022665880620479584
+weight mse diff: 8.059547333516548e-05
+weight max diff: 0.02265838347375393
+weight mse diff: 8.067264589328715e-05
+weight max diff: 0.022682340815663338
+weight mse diff: 8.069928405518567e-05
+weight max diff: 0.022728370502591133
+weight mse diff: 8.072786714308222e-05
+weight max diff: 0.022725526243448257
+weight mse diff: 8.075069126789458e-05
+weight max diff: 0.022718843072652817
+weight mse diff: 8.086074832647228e-05
+weight max diff: 0.02271471545100212
+weight mse diff: 8.09665589827091e-05
+weight max diff: 0.022751230746507645
+weight mse diff: 8.101930737325347e-05
+weight max diff: 0.022698471322655678
+weight mse diff: 8.105923605228327e-05
+weight max diff: 0.022678373381495476
+weight mse diff: 8.109088570051881e-05
+weight max diff: 0.02272476628422737
+weight mse diff: 8.106599874224685e-05
+weight max diff: 0.022726276889443398
+weight mse diff: 8.108295946840371e-05
+weight max diff: 0.022772643715143204
+weight mse diff: 8.114288276317438e-05
+weight max diff: 0.022761989384889603
+train loss: 0.0091, val loss: 1.4118, accuracy: 69.20%, 
+weight mse diff: 8.118064531004165e-05
+weight max diff: 0.02271646074950695
+weight mse diff: 8.126136819441854e-05
+weight max diff: 0.022742819041013718
+weight mse diff: 8.133962596446054e-05
+weight max diff: 0.022755956277251244
+weight mse diff: 8.135894262295551e-05
+weight max diff: 0.022793903946876526
+weight mse diff: 8.143443227481839e-05
+weight max diff: 0.022818878293037415
+weight mse diff: 8.144612723981481e-05
+weight max diff: 0.022840363904833794
+weight mse diff: 8.146294416633282e-05
+weight max diff: 0.022823497653007507
+weight mse diff: 8.152797785498933e-05
+weight max diff: 0.02282412350177765
+weight mse diff: 8.165072182464428e-05
+weight max diff: 0.022839317098259926
+weight mse diff: 8.170761670101001e-05
+weight max diff: 0.02280096709728241
+weight mse diff: 8.172729184252603e-05
+weight max diff: 0.022774653509259224
+weight mse diff: 8.173074235173772e-05
+weight max diff: 0.022842710837721825
+weight mse diff: 8.172366854353186e-05
+weight max diff: 0.022807734087109566
+weight mse diff: 8.178182721962912e-05
+weight max diff: 0.022853629663586617
+weight mse diff: 8.183426277241779e-05
+weight max diff: 0.022884661331772804
+train loss: 0.0084, val loss: 1.4228, accuracy: 69.11%, 
+weight mse diff: 8.189876412245667e-05
+weight max diff: 0.022813469171524048
+weight mse diff: 8.19358526484848e-05
+weight max diff: 0.022843800485134125
+weight mse diff: 8.200994295748387e-05
+weight max diff: 0.02282681316137314
+weight mse diff: 8.203370120440923e-05
+weight max diff: 0.02287108823657036
+weight mse diff: 8.20844256708142e-05
+weight max diff: 0.022889122366905212
+weight mse diff: 8.20521087518955e-05
+weight max diff: 0.022889653220772743
+weight mse diff: 8.210920537976563e-05
+weight max diff: 0.022881893441081047
+weight mse diff: 8.21918064559668e-05
+weight max diff: 0.02288181707262993
+weight mse diff: 8.225965440544769e-05
+weight max diff: 0.022886108607053757
+weight mse diff: 8.22801200399681e-05
+weight max diff: 0.02287854254245758
+weight mse diff: 8.233466476781359e-05
+weight max diff: 0.02283453941345215
+weight mse diff: 8.236877157230538e-05
+Epoch 34:  82%|████████▎ | 33/40 [07:13<01:31, 13.12s/it]Epoch 34:  85%|████████▌ | 34/40 [07:13<01:17, 12.94s/it]Epoch 35:  85%|████████▌ | 34/40 [07:24<01:17, 12.94s/it]Epoch 35:  88%|████████▊ | 35/40 [07:24<01:01, 12.39s/it]Epoch 36:  88%|████████▊ | 35/40 [07:36<01:01, 12.39s/it]Epoch 36:  90%|█████████ | 36/40 [07:36<00:48, 12.14s/it]Epoch 37:  90%|█████████ | 36/40 [07:47<00:48, 12.14s/it]Epoch 37:  92%|█████████▎| 37/40 [07:47<00:35, 11.91s/it]Epoch 38:  92%|█████████▎| 37/40 [07:59<00:35, 11.91s/it]Epoch 38:  95%|█████████▌| 38/40 [07:59<00:23, 11.91s/it]Epoch 39:  95%|█████████▌| 38/40 [08:11<00:23, 11.91s/it]Epoch 39:  98%|█████████▊| 39/40 [08:11<00:11, 11.98s/it]Epoch 40:  98%|█████████▊| 39/40 [08:22<00:11, 11.98s/it]Epoch 40: 100%|██████████| 40/40 [08:22<00:00, 11.74s/it]Epoch 40: 100%|██████████| 40/40 [08:22<00:00, 12.57s/it]
+weight max diff: 0.0228892732411623
+weight mse diff: 8.232690404952336e-05
+weight max diff: 0.02287933975458145
+weight mse diff: 8.239635900508802e-05
+weight max diff: 0.022918958216905594
+weight mse diff: 8.240717852459056e-05
+weight max diff: 0.02291904017329216
+train loss: 0.0077, val loss: 1.4352, accuracy: 69.20%, 
+weight mse diff: 8.244932695333773e-05
+weight max diff: 0.02287566475570202
+weight mse diff: 8.24821341467441e-05
+weight max diff: 0.022894449532032013
+weight mse diff: 8.258568183805437e-05
+weight max diff: 0.022899776697158813
+weight mse diff: 8.259813833433327e-05
+weight max diff: 0.022943632677197456
+weight mse diff: 8.264959272707983e-05
+weight max diff: 0.022951830178499222
+weight mse diff: 8.266434736015071e-05
+weight max diff: 0.022972648963332176
+weight mse diff: 8.266321992778103e-05
+weight max diff: 0.022943837568163872
+weight mse diff: 8.27521547392962e-05
+weight max diff: 0.02294427715241909
+weight mse diff: 8.282303166140537e-05
+weight max diff: 0.022961771115660667
+weight mse diff: 8.288008950785297e-05
+weight max diff: 0.022952625527977943
+weight mse diff: 8.293370190415317e-05
+weight max diff: 0.022912323474884033
+weight mse diff: 8.295908099853477e-05
+weight max diff: 0.02294164150953293
+weight mse diff: 8.296447509792415e-05
+weight max diff: 0.022942353039979935
+weight mse diff: 8.298002414619532e-05
+weight max diff: 0.023006876930594444
+weight mse diff: 8.303866351866418e-05
+weight max diff: 0.02299455739557743
+train loss: 0.0072, val loss: 1.4433, accuracy: 69.30%, 
+weight mse diff: 8.306692029691476e-05
+weight max diff: 0.022948550060391426
+weight mse diff: 8.308331068462849e-05
+weight max diff: 0.022976156324148178
+weight mse diff: 8.312408952804162e-05
+weight max diff: 0.022974250838160515
+weight mse diff: 8.318038459265154e-05
+weight max diff: 0.02300475724041462
+weight mse diff: 8.320040244313986e-05
+weight max diff: 0.023009156808257103
+weight mse diff: 8.320841469355855e-05
+weight max diff: 0.023049136623740196
+weight mse diff: 8.322982235142717e-05
+weight max diff: 0.023040911182761192
+weight mse diff: 8.328100405208261e-05
+weight max diff: 0.02302693761885166
+weight mse diff: 8.333955199191223e-05
+weight max diff: 0.023032845929265022
+weight mse diff: 8.340007799745308e-05
+weight max diff: 0.023028111085295677
+weight mse diff: 8.344656130532258e-05
+weight max diff: 0.02300548553466797
+weight mse diff: 8.349596804180237e-05
+weight max diff: 0.023030901327729225
+weight mse diff: 8.348609642894189e-05
+weight max diff: 0.023023992776870728
+weight mse diff: 8.352352860185874e-05
+weight max diff: 0.023032622411847115
+weight mse diff: 8.35976844086872e-05
+weight max diff: 0.02307811751961708
+train loss: 0.0067, val loss: 1.4537, accuracy: 69.36%, 
+weight mse diff: 8.359608995078815e-05
+weight max diff: 0.02300877682864666
+weight mse diff: 8.367050072877191e-05
+weight max diff: 0.023039190098643303
+weight mse diff: 8.372999941741455e-05
+weight max diff: 0.02304103411734104
+weight mse diff: 8.376037790469582e-05
+weight max diff: 0.02306794747710228
+weight mse diff: 8.37966100561971e-05
+weight max diff: 0.023087462410330772
+weight mse diff: 8.379932789637223e-05
+weight max diff: 0.023099130019545555
+weight mse diff: 8.380546589137339e-05
+weight max diff: 0.02309425361454487
+weight mse diff: 8.387401025800045e-05
+weight max diff: 0.02311905100941658
+weight mse diff: 8.394495286268011e-05
+weight max diff: 0.02310929261147976
+weight mse diff: 8.399205380271724e-05
+weight max diff: 0.0230969600379467
+weight mse diff: 8.402147101094215e-05
+weight max diff: 0.023071471601724625
+weight mse diff: 8.403801875545014e-05
+weight max diff: 0.023095017299056053
+weight mse diff: 8.400711166700603e-05
+weight max diff: 0.023108866065740585
+weight mse diff: 8.408884021093854e-05
+weight max diff: 0.02313791774213314
+weight mse diff: 8.413605581836237e-05
+weight max diff: 0.023120800033211708
+train loss: 0.0063, val loss: 1.4671, accuracy: 69.40%, 
+weight mse diff: 8.414435863812741e-05
+weight max diff: 0.02307520993053913
+weight mse diff: 8.419058501374366e-05
+weight max diff: 0.023117545992136
+weight mse diff: 8.422376338046433e-05
+weight max diff: 0.023098735138773918
+weight mse diff: 8.425948546175732e-05
+weight max diff: 0.02313106879591942
+weight mse diff: 8.429021420397476e-05
+weight max diff: 0.023146189749240875
+weight mse diff: 8.428328835918819e-05
+weight max diff: 0.023157384246587753
+weight mse diff: 8.431539173159308e-05
+weight max diff: 0.02315640263259411
+weight mse diff: 8.436801181233022e-05
+weight max diff: 0.023131905123591423
+weight mse diff: 8.445580816385245e-05
+weight max diff: 0.02316124550998211
+weight mse diff: 8.448901841973111e-05
+weight max diff: 0.02313484437763691
+weight mse diff: 8.451468414705232e-05
+weight max diff: 0.02311156876385212
+weight mse diff: 8.45420592128221e-05
+weight max diff: 0.023141030222177505
+weight mse diff: 8.449810769661781e-05
+weight max diff: 0.023133371025323868
+weight mse diff: 8.453406408648334e-05
+weight max diff: 0.023166682571172714
+weight mse diff: 8.46006857386783e-05
+weight max diff: 0.023178430274128914
+train loss: 0.0059, val loss: 1.4767, accuracy: 69.32%, 
+weight mse diff: 8.46226061668176e-05
+weight max diff: 0.023121589794754982
+weight mse diff: 8.465779201571877e-05
+weight max diff: 0.02314174920320511
+weight mse diff: 8.468334836209124e-05
+weight max diff: 0.023159343749284744
+weight mse diff: 8.470008134509044e-05
+weight max diff: 0.023178191855549812
+weight mse diff: 8.475979103650388e-05
+weight max diff: 0.023206228390336037
+weight mse diff: 8.474525495216767e-05
+weight max diff: 0.02320159412920475
+weight mse diff: 8.477878076007528e-05
+weight max diff: 0.0231928750872612
+weight mse diff: 8.483602915987376e-05
+weight max diff: 0.02320219576358795
+weight mse diff: 8.492482105282306e-05
+weight max diff: 0.023204226046800613
+weight mse diff: 8.493802344844426e-05
+weight max diff: 0.023176446557044983
+weight mse diff: 8.495588639334528e-05
+weight max diff: 0.023179441690444946
+weight mse diff: 8.499744134837783e-05
+weight max diff: 0.023182164877653122
+weight mse diff: 8.497742275892506e-05
+weight max diff: 0.02320065349340439
+weight mse diff: 8.503829181449873e-05
+weight max diff: 0.02320362813770771
+weight mse diff: 8.506973438215937e-05
+weight max diff: 0.02323010191321373
+train loss: 0.0056, val loss: 1.4832, accuracy: 69.39%, 
+weight mse diff: 8.508715949062662e-05
+weight max diff: 0.02318575233221054
+weight mse diff: 8.514531518244439e-05
+weight max diff: 0.02321266196668148
+weight mse diff: 8.51815073446005e-05
+weight max diff: 0.02321142517030239
+weight mse diff: 8.520742775885992e-05
+weight max diff: 0.023237090557813644
+weight mse diff: 8.522724276360805e-05
+weight max diff: 0.023253418505191803
+weight mse diff: 8.524115213504047e-05
+weight max diff: 0.023262908682227135
+weight mse diff: 8.527597782403973e-05
+weight max diff: 0.023260662332177162
+weight mse diff: 8.529948688362765e-05
+weight max diff: 0.02326924353837967
+weight mse diff: 8.533022182177774e-05
+weight max diff: 0.023269064724445343
+weight mse diff: 8.538241620215103e-05
+weight max diff: 0.02326154336333275
+weight mse diff: 8.540871120032989e-05
+weight max diff: 0.023236611858010292
+weight mse diff: 8.543691205886716e-05
+weight max diff: 0.02326296642422676
+weight mse diff: 8.541755138935514e-05
+weight max diff: 0.0232583936303854
+weight mse diff: 8.547387022872499e-05
+weight max diff: 0.02328971028327942
+weight mse diff: 8.553707638725427e-05
+weight max diff: 0.023298636078834534
+train loss: 0.0052, val loss: 1.4931, accuracy: 69.34%, 
+Traceback (most recent call last):
+  File "/home/zzwen/training/SNNs/TF_2_x/CIFAR10-Compare-Conv.py", line 289, in <module>
+    stl, svl, saccs, sacc, weight_diffs= fit_with_weight_diff(network1, network2, train_dataset, val_dataset, test_dataset, epochs, lr)
+  File "/home/zzwen/training/SNNs/TF_2_x/CIFAR10-Compare-Conv.py", line 242, in fit_with_weight_diff
+    acc = evaluate(network=best_model, dataset=testloader, metric=accuracy)
+  File "/home/zzwen/training/SNNs/TF_2_x/CIFAR10-Compare-Conv.py", line 193, in evaluate
+    for loss in _forward(network, dataset, metric):
+  File "/home/zzwen/training/SNNs/TF_2_x/CIFAR10-Compare-Conv.py", line 138, in _forward
+    y_hat = network(x, training=False)
+TypeError: 'NoneType' object is not callable
