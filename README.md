@@ -6,7 +6,9 @@ The build/ directory contains scripts that transform compile commands and genera
 
 The analysis/ directory includes LLVM analysis passes for extracting precision casting operations critical to numerical stability.
 
-The testing/ directory houses precision testing tools for activation operators. 
+The testing/ directory houses precision testing tools for operators. 
+
+The training/ directory including training scripts that quantifying weight differences during training when using bfloat16 operators compared to float32.
 ## Usage
 #### Build and Compile
 Firstly, to obtain the compilation database, you need to compile the DL frameworks from source code. For more details, refer to the https://github.com/pytorch/pytorch and https://www.tensorflow.org/install/source. Specifically, when compiling TensorFlow using Bazel, you should add the option --subcommands to print the full command line for each command. After compiling, the compilation database can be found in the build directory for PyTorch. For TensorFlow, you need to capture the compilation database by redirection.
@@ -27,3 +29,6 @@ We refer to the tool Predoo (https://github.com/predoodl/predoo), reimplement an
 python test_torch_forward.py elu
 ```
 The results will be saved in the testing/data directory.
+
+#### Training
+Simply run the scripts in the directory, and the program will output the weight differences between the two models to stdout.
