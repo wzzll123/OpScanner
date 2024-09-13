@@ -724,11 +724,3 @@ Epoch 40:  98%|█████████▊| 39/40 [02:14<00:03,  3.29s/it]
 Epoch 40: 100%|██████████| 40/40 [02:14<00:00,  3.33s/it]
 Epoch 40: 100%|██████████| 40/40 [02:14<00:00,  3.36s/it]
 train loss: 0.0067, val loss: 1.4806, accuracy: 68.93%, 
-Traceback (most recent call last):
-  File "/home/zzwen/training/SNNs/pytorch/CIFAR10-Compare-Conv.py", line 245, in <module>
-    train_losses, val_losses, accuracies, acc, weight_diffs = fit_with_weight_diff(
-                                                              ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/zzwen/training/SNNs/pytorch/CIFAR10-Compare-Conv.py", line 219, in fit_with_weight_diff
-    acc = evaluate(network=best_model, data=testloader, metric=accuracy)
-                           ^^^^^^^^^^
-NameError: name 'best_model' is not defined
